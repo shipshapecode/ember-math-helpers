@@ -1,5 +1,8 @@
 # Ember-math-helpers
 
+[![Ember Observer Score](http://emberobserver.com/badges/ember-math-helpers.svg)](http://emberobserver.com/addons/ember-math-helpers)
+[![Code Climate](https://codeclimate.com/github/shipshapecode/ember-math-helpers/badges/gpa.svg)](https://codeclimate.com/github/shipshapecode/ember-math-helpers)
+
 HTMLBars template helpers for doing basic arithmetic operations
 
 ## Installation
