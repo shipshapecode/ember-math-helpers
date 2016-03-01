@@ -3,8 +3,7 @@ import { module, test } from 'qunit';
 
 module('Unit | Helper | add');
 
-// Replace this with your real tests.
-test('it works', function(assert) {
-  let result = add([42]);
-  assert.ok(result);
+test('addition works', function(assert) {
+  let result = add([20, 10]);
+  assert.equal(result, 30);
 });
