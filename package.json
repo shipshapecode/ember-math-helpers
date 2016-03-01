@@ -1,7 +1,7 @@
 {
   "name": "ember-math-helpers",
   "version": "0.0.2",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "HTMLBars helpers for basic arithmetic",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,10 +15,15 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": {
+    "name": "Robert Wagner",
+    "email": "rwwagner90@gmail.com",
+    "url": "https://github.com/rwwagner90"
+  },
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
+    "codeclimate-test-reporter": "^0.3.1",
     "ember-ajax": "0.7.1",
     "ember-cli": "2.3.0",
     "ember-cli-app-version": "^1.0.0",
