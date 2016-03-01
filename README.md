@@ -16,7 +16,7 @@ mod    | `a % b`    | `{{mod a b}}`
 mult   | `a * b`    | `{{mult a b}}`
 sub    | `a - b`    | `{{sub a b}}`
 
-You can also use this helper inside other HTMLBars markup like so:
+You can also use these helpers to do math inside other HTMLBars markup like so:
 ```hbs
 <span class="nav-marker color-{{if multiColor (add selectedIndex 1) 1}}"></span>
 ```
