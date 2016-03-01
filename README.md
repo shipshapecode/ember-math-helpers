@@ -1,26 +1,18 @@
 # Ember-math-helpers
 
-This README outlines the details of collaborating on this Ember addon.
+HTMLBars template helpers for doing basic arithmetic operations
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`ember install ember-math-helpers`
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+Helper | JavaScript | HTMLBars
+-------|------------|-------------------
+add    | `a + b`    | `{{add a b}}`
+div    | `a / b`    | `{{div a b}}`
+mod    | `a % b`    | `{{mod a b}}`
+mult   | `a * b`    | `{{mult a b}}`
+sub    | `a - b`    | `{{sub a b}}`
 
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
