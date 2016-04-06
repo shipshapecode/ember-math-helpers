@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export function div(params/*, hash*/) {
-  return params[0] / params[1];
+  return params.reduce((a, b) => a / b);
 }
 
 export default Ember.Helper.helper(div);
