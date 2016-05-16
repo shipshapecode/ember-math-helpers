@@ -1,7 +1,8 @@
 import Ember from 'ember';
+const {Helper} = Ember;
 
-export function add(params/*, hash*/) {
+export function add(params) {
   return params.reduce((a, b) => a + b);
 }
 
-export default Ember.Helper.helper(add);
+export default Helper.helper(add);

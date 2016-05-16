@@ -1,7 +1,8 @@
 import Ember from 'ember';
+const {Helper} = Ember;
 
-export function mult(params/*, hash*/) {
+export function mult(params) {
   return params.reduce((a, b) => a * b);
 }
 
-export default Ember.Helper.helper(mult);
+export default Helper.helper(mult);
