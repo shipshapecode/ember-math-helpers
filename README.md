@@ -27,9 +27,26 @@ mod    | `a % b`    | `{{mod a b}}`
 mult   | `a * b`    | `{{mult a b}}`
 sub    | `a - b`    | `{{sub a b}}`
 
+You can pass as many arguments as you would like to the helpers. For something like
+`10 - 1 - 2 - 3` you could do:
+```hbs
+{{sub 10 1 2 3}}
+```
+
 You can also use these helpers to do math inside other HTMLBars markup like so:
 ```hbs
 <span class="nav-marker color-{{if multiColor (add selectedIndex 1) 1}}"></span>
 ```
+
+## Composable Helpers
+
+There is full support for using all of the helpers together, to do complex math,
+even though complex calculations may be better left to JS.
+
+For something like `(15 + 5) / 2 * 10` you could do:
+```hbs
+{{mult (div (add 15 5) 2) 10}}
+```
+
 
 
