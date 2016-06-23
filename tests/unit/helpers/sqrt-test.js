@@ -3,7 +3,6 @@ import { module, test } from 'qunit';
 
 module('Unit | Helper | sqrt');
 
-// Replace this with your real tests.
 test('square root works', function(assert) {
   const result = sqrt([25]);
   assert.equal(result, 5);
