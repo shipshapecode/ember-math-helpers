@@ -20,12 +20,14 @@ HTMLBars template helpers for doing basic arithmetic operations
 ## Usage
 
 Helper | JavaScript | HTMLBars
--------|------------|-------------------
-add    | `a + b`    | `{{add a b}}`
-div    | `a / b`    | `{{div a b}}`
-mod    | `a % b`    | `{{mod a b}}`
-mult   | `a * b`    | `{{mult a b}}`
-sub    | `a - b`    | `{{sub a b}}`
+-------|------------------|-------------------
+add    | `a + b`          | `{{add a b}}`
+div    | `a / b`          | `{{div a b}}`
+mod    | `a % b`          | `{{mod a b}}`
+mult   | `a * b`          | `{{mult a b}}`
+pow    | `Math.pow(a, b)` | `{{pow a b}}`
+sqrt   | `Math.sqrt(a)`   | `{{sqrt a}}`
+sub    | `a - b`          | `{{sub a b}}`
 
 You can pass as many arguments as you would like to the helpers. For something like
 `10 - 1 - 2 - 3` you could do:
