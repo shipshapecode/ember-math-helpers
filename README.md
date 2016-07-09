@@ -22,7 +22,9 @@ HTMLBars template helpers for doing basic arithmetic operations
 Helper | JavaScript | HTMLBars
 -------|------------------|-------------------
 add    | `a + b`          | `{{add a b}}`
+ceil   | `Math.ceil(a)`   | `{{ceil a}}`
 div    | `a / b`          | `{{div a b}}`
+floor  | `Math.floor(a)`  | `{{floor a}}`
 mod    | `a % b`          | `{{mod a b}}`
 mult   | `a * b`          | `{{mult a b}}`
 pow    | `Math.pow(a, b)` | `{{pow a b}}`
