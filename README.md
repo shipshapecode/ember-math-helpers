@@ -30,6 +30,8 @@ mult   | `a * b`          | `{{mult a b}}`
 pow    | `Math.pow(a, b)` | `{{pow a b}}`
 sqrt   | `Math.sqrt(a)`   | `{{sqrt a}}`
 sub    | `a - b`          | `{{sub a b}}`
+min    | `Math.min([a, b, c...])` | `{{min a b c }}`
+max    | `Math.max([a, b, c...])` | `{{max a b c }}`
 
 You can pass as many arguments as you would like to the helpers. For something like
 `10 - 1 - 2 - 3` you could do:
@@ -51,6 +53,3 @@ For something like `(15 + 5) / 2 * 10` you could do:
 ```hbs
 {{mult (div (add 15 5) 2) 10}}
 ```
-
-
-
