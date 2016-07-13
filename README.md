@@ -32,6 +32,8 @@ sqrt   | `Math.sqrt(a)`   | `{{sqrt a}}`
 sub    | `a - b`          | `{{sub a b}}`
 min    | `Math.min([a, b, c...])` | `{{min a b c }}`
 max    | `Math.max([a, b, c...])` | `{{max a b c }}`
+round    | `Math.round(a)` | `{{round a}}`
+
 
 You can pass as many arguments as you would like to the helpers. For something like
 `10 - 1 - 2 - 3` you could do:
