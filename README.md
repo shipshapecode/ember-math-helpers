@@ -25,15 +25,14 @@ add    | `a + b`                  | `{{add a b}}`
 ceil   | `Math.ceil(a)`           | `{{ceil a}}`
 div    | `a / b`                  | `{{div a b}}`
 floor  | `Math.floor(a)`          | `{{floor a}}`
+max    | `Math.max([a, b, c...])` | `{{max a b c }}`
+min    | `Math.min([a, b, c...])` | `{{min a b c }}`
 mod    | `a % b`                  | `{{mod a b}}`
 mult   | `a * b`                  | `{{mult a b}}`
 pow    | `Math.pow(a, b)`         | `{{pow a b}}`
+round  | `Math.round(a)`          | `{{round a}}`
 sqrt   | `Math.sqrt(a)`           | `{{sqrt a}}`
 sub    | `a - b`                  | `{{sub a b}}`
-min    | `Math.min([a, b, c...])` | `{{min a b c }}`
-max    | `Math.max([a, b, c...])` | `{{max a b c }}`
-round  | `Math.round(a)`          | `{{round a}}`
-
 
 You can pass as many arguments as you would like to the helpers. For something like
 `10 - 1 - 2 - 3` you could do:
