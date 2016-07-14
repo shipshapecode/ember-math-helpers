@@ -19,20 +19,20 @@ HTMLBars template helpers for doing basic arithmetic operations
 
 ## Usage
 
-Helper | JavaScript | HTMLBars
--------|------------------|-------------------
-add    | `a + b`          | `{{add a b}}`
-ceil   | `Math.ceil(a)`   | `{{ceil a}}`
-div    | `a / b`          | `{{div a b}}`
-floor  | `Math.floor(a)`  | `{{floor a}}`
-mod    | `a % b`          | `{{mod a b}}`
-mult   | `a * b`          | `{{mult a b}}`
-pow    | `Math.pow(a, b)` | `{{pow a b}}`
-sqrt   | `Math.sqrt(a)`   | `{{sqrt a}}`
-sub    | `a - b`          | `{{sub a b}}`
+Helper | JavaScript               | HTMLBars
+-------|--------------------------|-------------------
+add    | `a + b`                  | `{{add a b}}`
+ceil   | `Math.ceil(a)`           | `{{ceil a}}`
+div    | `a / b`                  | `{{div a b}}`
+floor  | `Math.floor(a)`          | `{{floor a}}`
+mod    | `a % b`                  | `{{mod a b}}`
+mult   | `a * b`                  | `{{mult a b}}`
+pow    | `Math.pow(a, b)`         | `{{pow a b}}`
+sqrt   | `Math.sqrt(a)`           | `{{sqrt a}}`
+sub    | `a - b`                  | `{{sub a b}}`
 min    | `Math.min([a, b, c...])` | `{{min a b c }}`
 max    | `Math.max([a, b, c...])` | `{{max a b c }}`
-round    | `Math.round(a)` | `{{round a}}`
+round  | `Math.round(a)`          | `{{round a}}`
 
 
 You can pass as many arguments as you would like to the helpers. For something like
