@@ -24,11 +24,14 @@ Helper | JavaScript               | HTMLBars
 add    | `a + b`                  | `{{add a b}}`
 ceil   | `Math.ceil(a)`           | `{{ceil a}}`
 div    | `a / b`                  | `{{div a b}}`
+e      | `2.718281828459045`      | `{{e}}`
+exp    | `Math.exp(a)`            | `{{exp a}}`
 floor  | `Math.floor(a)`          | `{{floor a}}`
 max    | `Math.max([a, b, c...])` | `{{max a b c }}`
 min    | `Math.min([a, b, c...])` | `{{min a b c }}`
 mod    | `a % b`                  | `{{mod a b}}`
 mult   | `a * b`                  | `{{mult a b}}`
+pi     | `3.141592653589793`      | `{{pi}}`
 pow    | `Math.pow(a, b)`         | `{{pow a b}}`
 round  | `Math.round(a)`          | `{{round a}}`
 sqrt   | `Math.sqrt(a)`           | `{{sqrt a}}`
