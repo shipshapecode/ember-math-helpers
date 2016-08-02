@@ -1,6 +1,6 @@
 /* globals blanket, module */
 
-var options = {
+let options = {
   modulePrefix: 'ember-math-helpers',
   filter: '//.*ember-math-helpers/.*/',
   antifilter: '//.*(tests|template).*/',
@@ -11,9 +11,9 @@ var options = {
     autostart: true,
     lcovOptions: {
       outputFile: 'lcov.dat',
-      renamer: function (moduleName) {
-        var expression = /^ember-math-helpers/;
-        return moduleName.replace(expression, 'addon') + '.js';
+      renamer(moduleName) {
+        let expression = /^ember-math-helpers/;
+        return `${moduleName.replace(expression, 'addon')}.js`;
       }
     }
   }

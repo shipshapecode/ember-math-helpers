@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const {Helper} = Ember;
+const { Helper } = Ember;
 
 export function ceil(params) {
   return Math.ceil(params[0]);

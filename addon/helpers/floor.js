@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const {Helper} = Ember;
+const { Helper } = Ember;
 
 export function floor(params) {
   return Math.floor(params[0]);

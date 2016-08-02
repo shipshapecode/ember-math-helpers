@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const {Helper} = Ember;
+const { Helper } = Ember;
 
 export function sqrt(params) {
   return Math.sqrt(params[0]);

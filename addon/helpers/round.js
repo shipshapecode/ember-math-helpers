@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const {Helper} = Ember;
+const { Helper } = Ember;
 
 export function round(number) {
   return Math.round(number[0]);

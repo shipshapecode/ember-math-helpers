@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const {Helper} = Ember;
+const { Helper } = Ember;
 
 export function max(params) {
   return Math.max(...params);
