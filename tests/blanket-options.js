@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-let options = {
+const options = {
   modulePrefix: 'ember-math-helpers',
   filter: '//.*ember-math-helpers/.*/',
   antifilter: '//.*(tests|template).*/',
@@ -13,6 +13,7 @@ let options = {
       outputFile: 'lcov.dat',
       renamer: function(moduleName) {
         const expression = /^ember-math-helpers/;
+
         return moduleName.replace(expression, 'addon') +'.js';
       }
     }
