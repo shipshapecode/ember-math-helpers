@@ -1,4 +1,4 @@
-/* globals blanket, module */
+/* eslint-disable */
 
 let options = {
   modulePrefix: 'ember-math-helpers',
@@ -11,9 +11,9 @@ let options = {
     autostart: true,
     lcovOptions: {
       outputFile: 'lcov.dat',
-      renamer(moduleName) {
-        let expression = /^ember-math-helpers/;
-        return `${moduleName.replace(expression, 'addon')}.js`;
+      renamer: function(moduleName) {
+        const expression = /^ember-math-helpers/;
+        return moduleName.replace(expression, 'addon') +'.js';
       }
     }
   }
@@ -23,3 +23,5 @@ if (typeof exports === 'undefined') {
 } else {
   module.exports = options;
 }
+
+/* eslint-enable */
