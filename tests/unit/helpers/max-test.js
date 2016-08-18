@@ -10,4 +10,6 @@ test('max works', function(assert) {
   assert.equal(max([42]), 42, 'accepts one argument');
 
   assert.equal(max([]), Number.NEGATIVE_INFINITY, 'accepts zero arguments');
+
+  assert.equal(max({}), Number.NEGATIVE_INFINITY, 'accepts an object');
 });

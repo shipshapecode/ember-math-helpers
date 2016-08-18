@@ -10,4 +10,6 @@ test('it works', function(assert) {
   assert.equal(min([42]), 42, 'accepts one argument');
 
   assert.equal(min([]), Infinity, 'accepts zero arguments');
+
+  assert.equal(min({}), Infinity, 'accepts an object');
 });
