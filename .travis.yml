@@ -42,7 +42,7 @@ script:
   - ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
 
 after_script:
-  - codeclimate-test-reporter < lcov.dat
+  - codeclimate-test-reporter < coverage/lcov.info
 
 addons:
     code_climate:
