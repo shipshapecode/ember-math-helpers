@@ -1,22 +1,10 @@
 ---
 engines:
   duplication:
-    enabled: true
-    exclude_fingerprints:
-    - 848e7b1649904547de6abd67014de4c2
-    - 59d491d80b5920ee5bb280ec609f4931
-    - 0a163092580423245142929d7862d127
-    - 4c253a30f64e93056797c91c39e4b28f
-    - be607722c43faf6c9591b41ba5a44b9c
-    - 28abab465f238fc7b9f14e7b079d90d0
-    - 581ec93ef8a625f8122ab4a5b94a3bea
-    - df7ec274551e6e563621a6a1214fd883
+    enabled: false
     config:
       languages:
-      - ruby
       - javascript
-      - python
-      - php
   eslint:
     enabled: true
   fixme:
@@ -27,9 +15,6 @@ ratings:
   - "**.js"
   - "**.jsx"
   - "**.module"
-  - "**.php"
-  - "**.py"
-  - "**.rb"
 exclude_paths:
 - config/
 - tests/
