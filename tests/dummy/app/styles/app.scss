@@ -1,12 +1,28 @@
-@import url(https://fonts.googleapis.com/css?family=Signika|Pacifico);
+@import "fonts";
+
+$primary: #3D2F53;
+$secondary: #624B86;
+
+$background: $primary;
+$bloodOrange: #DA4843;
+$blue: #35BCE0;
+$cream: #F5F0E1;
+$dark: #35323A;
+$light: #7B7486;
+$lighter: #C1B5D3;
+$navBar: darken($primary, 5%);
+$whiteish: #DFE6E9;
 
 body {
-  background: #ede9de;
-  font-family: 'Signika', sans-serif;
+  background: $primary;
+  color: $whiteish;
+  font-family: 'Pier Sans', sans-serif;
   font-size: 1.5rem;
 }
 
 h1 {
-  font-family: 'Pacifico';
-  font-size: 7vw;
+  .pacifico {
+    font-family: 'Pacifico';
+  }
+  font-size: 6vw;
 }
