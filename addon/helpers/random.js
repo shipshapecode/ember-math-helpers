@@ -16,7 +16,7 @@ const DEFAULT_OPTS = {
 
 export function random(params, { decimals } = DEFAULT_OPTS) {
   // no positional or named args: just return Math.random() w/ default decimal precision
-  if (typeof params === 'undefined') {
+  if (typeof params === 'undefined' || (isArray(params) && !params.length)) {
     return +(Math.random().toFixed(max(0, min(MAX_DECIMALS, decimals))));
   }
 
