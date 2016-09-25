@@ -7,41 +7,57 @@
 </centered>
 
 <centered>
-  1 + 2 = {{add 1 2}}
+  1 + 2 = <span class="result">{{add 1 2}}</span>
 </centered>
 
 <centered>
-  20 / 10 = {{div 20 10}}
+  20 / 10 = <span class="result">{{div 20 10}}</span>
 </centered>
 
 <centered>
-  11 % 10 = {{mod 11 10}}
+  11 % 10 = <span class="result">{{mod 11 10}}</span>
 </centered>
 
 <centered>
-  6 * 6 = {{mult 6 6}}
+  6 * 6 = <span class="result">{{mult 6 6}}</span>
 </centered>
 
 <centered>
-  10 - 2 = {{sub 10 2}}
+  10 - 2 = <span class="result">{{sub 10 2}}</span>
 </centered>
 
 <centered>
-  10 - 1 - 2 - 3 = {{sub 10 1 2 3}}
+  10 - 1 - 2 - 3 = <span class="result">{{sub 10 1 2 3}}</span>
 </centered>
 
 <centered>
-  (15 + 5) / 2 * 10 = {{mult (div (add 15 5) 2) 10}}
+  (15 + 5) / 2 * 10 = <span class="result">{{mult (div (add 15 5) 2) 10}}</span>
 </centered>
 
 <centered>
-  Minimum of array: [2, 3, 5, 3, 26, 7, 123] = {{min 2 3 5 3 26 7 123}}
+  Minimum of array: [2, 3, 5, 3, 26, 7, 123] = <span class="result">{{min 2 3 5 3 26 7 123}}</span>
 </centered>
 
 <centered>
-  Maximum of array: [5, 2, 134, 125, 1234, 5234, 2] = {{max 5 2 134 125 1234 5234 2}}
+  Maximum of array: [5, 2, 134, 125, 1234, 5234, 2] = <span class="result">{{max 5 2 134 125 1234 5234 2}}</span>
 </centered>
 
 <centered>
-  21.23 rounded to the nearest whole number = {{round 21.23}}
+  21.23 rounded to the nearest whole number = <span class="result">{{round 21.23}}</span>
+</centered>
+
+{{!-- <section class="centered content-section"> --}}
+<centered>
+  <h3>Random Numbers</h3>
+</centered>
+
+<centered>
+  <ul class="category-list">
+    <centered><li>Integer (0 - 1): <span class="result">{{random}}</span></li></centered>
+    <centered><li>Bounded Int (0 - 42): <span class="result">{{random 42}}</span></li></centered>
+    <centered><li>Bounded Int (21 - 1797): <span class="result">{{random 21 1797}}</span></li></centered>
+    <centered><li>Float, 2 decimals (0 - 1): <span class="result">{{random decimals=2}}</span></li></centered>
+    <centered><li>Float, 4 decimals (0 - 1): <span class="result">{{random decimals=4}}</span></li></centered>
+    <centered><li>Bounded Float, 1 decimal (20 - 93): <span class="result">{{random 93 20 decimals=1}}</span></li></centered>
+  </ul>
 </centered>
