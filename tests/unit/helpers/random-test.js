@@ -18,10 +18,6 @@ function isPassing(passCount, sampleSize, toleranceRatio) {
   return passCount >= floor(sampleSize * (1 - toleranceRatio));
 }
 
-function hasDecimal(value) {
-  return value.toString().search(/\./) !== -1;
-}
-
 function numDecimals(floatingPointNum) {
   return floatingPointNum.toPrecision().split('.')[1].length;
 }
@@ -43,7 +39,7 @@ test('no positional arguments', function(assert) {
   passCount = range(1, SAMPLE_SIZE).reduce((acc) => {
     randVal = random({ decimals: PRECISION });
 
-    satisfied = ((randVal > 0 && randVal < 1) && numDecimals(randVal) === PRECISION);
+    satisfied = ((randVal > 0 && randVal < 1) && numDecimals(randVal) <= PRECISION);
 
     return satisfied ? acc + 1 : acc;
   }, 0);
@@ -57,7 +53,7 @@ test('one positional argument', function(assert) {
   passCount = range(1, SAMPLE_SIZE).reduce((acc) => {
     randVal = random([42]);
 
-    satisfied = ((randVal >= 0 && randVal <= 42) && !hasDecimal(randVal));
+    satisfied = randVal >= 0 && randVal <= 42;
 
     return satisfied ? acc + 1 : acc;
   }, 0);
@@ -68,7 +64,7 @@ test('one positional argument', function(assert) {
   passCount = range(1, SAMPLE_SIZE).reduce((acc) => {
     randVal = random([42], { decimals: PRECISION });
 
-    satisfied = ((randVal > 0 && randVal < 42) && numDecimals(randVal) === PRECISION);
+    satisfied = ((randVal > 0 && randVal < 42) && numDecimals(randVal) <= PRECISION);
 
     return satisfied ? acc + 1 : acc;
   }, 0);
@@ -81,7 +77,7 @@ test('two positional arguments', function(assert) {
   passCount = range(1, SAMPLE_SIZE).reduce((acc) => {
     randVal = random([21, 1797]);
 
-    satisfied = ((randVal >= 21 && randVal <= 1797) && !hasDecimal(randVal));
+    satisfied = randVal >= 21 && randVal <= 1797;
 
     return satisfied ? acc + 1 : acc;
   }, 0);
@@ -92,7 +88,7 @@ test('two positional arguments', function(assert) {
   passCount = range(1, SAMPLE_SIZE).reduce((acc) => {
     randVal = random([21, 1797], { decimals: PRECISION });
 
-    satisfied = ((randVal >= 21 && randVal <= 1797) && numDecimals(randVal) === PRECISION);
+    satisfied = ((randVal >= 21 && randVal <= 1797) && numDecimals(randVal) <= PRECISION);
 
     return satisfied ? acc + 1 : acc;
   }, 0);
@@ -101,27 +97,8 @@ test('two positional arguments', function(assert) {
 });
 
 test('bounding `decimals` between 0 and 20', function(assert) {
-  randVal = random([42], { decimals: -100 });
-  satisfied = (randVal > 0 && randVal < 42) && !hasDecimal(randVal);
-
-  assert.ok(satisfied);
-
-  randVal = random([42], { decimals: null });
-  satisfied = (randVal > 0 && randVal < 42) && !hasDecimal(randVal);
-
-  assert.ok(satisfied);
-
-  randVal = random([42], { decimals: undefined });
-  satisfied = (randVal > 0 && randVal < 42) && !hasDecimal(randVal);
-
-  assert.ok(satisfied);
-
-  randVal = random([42], { decimals: 0 });
-  satisfied = (randVal > 0 && randVal < 42) && !hasDecimal(randVal);
-
-  assert.ok(satisfied);
-
   randVal = random([42], { decimals: 100 });
+
   satisfied = (randVal > 0 && randVal < 42) && numDecimals(randVal) <= 20;
 
   assert.ok(satisfied);
