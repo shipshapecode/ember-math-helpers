@@ -1,6 +1,6 @@
 {
   "name": "ember-math-helpers",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "HTMLBars helpers for basic arithmetic",
   "directories": {
     "doc": "doc",
@@ -59,7 +59,7 @@
     "configPath": "tests/dummy/config",
     "demoURL": "http://shipshapecode.github.io/ember-math-helpers/"
   },
-   "greenkeeper": {
+  "greenkeeper": {
     "ignore": [
       "broccoli-asset-rev",
       "ember-cli-app-version",
