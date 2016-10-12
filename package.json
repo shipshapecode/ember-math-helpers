@@ -58,5 +58,20 @@
   "ember-addon": {
     "configPath": "tests/dummy/config",
     "demoURL": "http://shipshapecode.github.io/ember-math-helpers/"
+  },
+   "greenkeeper": {
+    "ignore": [
+      "broccoli-asset-rev",
+      "ember-cli-app-version",
+      "ember-cli-babel",
+      "ember-cli-htmlbars",
+      "ember-cli-htmlbars-inline-precompile",
+      "ember-cli-qunit",
+      "ember-cli-sri",
+      "ember-cli-test-loader",
+      "ember-export-application-global",
+      "ember-resolver",
+      "loader.js"
+    ]
   }
 }
