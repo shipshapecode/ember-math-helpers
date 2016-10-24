@@ -37,6 +37,7 @@ random (Upper Bound, Lower Bound) [, round]) | bounded `Math.random()`, `decimal
 round                                        | `Math.round(a)`                                                           | `{{round a}}`
 sqrt                                         | `Math.sqrt(a)`                                                            | `{{sqrt a}}`
 sub                                          | `a - b`                                                                   | `{{sub a b}}`
+percent                                      |  `a / 100 * b`      | `{{percent a b}}`
 
 You can pass as many arguments as you would like to the helpers. For something like
 `10 - 1 - 2 - 3` you could do:
