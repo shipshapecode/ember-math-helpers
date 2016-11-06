@@ -15,11 +15,6 @@ const DEFAULT_OPTS = {
 };
 
 export function random(params, { decimals } = DEFAULT_OPTS) {
-  // no positional or named args: just return Math.random() w/ default decimal precision
-  if (typeof params === 'undefined' || (isArray(params) && !params.length)) {
-    return +(Math.random().toFixed(max(0, min(MAX_DECIMALS, decimals))));
-  }
-
   // no positional args, but only an options hash from named args
   if (typeof params === 'object' && !isArray(params)) {
     decimals = typeof params.decimals !== 'undefined' ? params.decimals : DEFAULT_OPTS.decimals;
@@ -28,14 +23,14 @@ export function random(params, { decimals } = DEFAULT_OPTS) {
   }
 
   // one positional arg: treat it as an upper bound
-  if (params.length === 1) {
+  if (params && params.length === 1) {
     let [upperBound] = params;
 
     return +((Math.random() * upperBound).toFixed(max(0, min(MAX_DECIMALS, decimals))));
   }
 
   // two positional args: use them to derive upper and lower bounds
-  if (params.length === 2) {
+  if (params && params.length === 2) {
     let [lowerBound, upperBound] = params;
 
     // for convinience, swap if a higher number is accidentally passed first
@@ -45,7 +40,8 @@ export function random(params, { decimals } = DEFAULT_OPTS) {
     return +((lowerBound + (Math.random() * (upperBound - lowerBound))).toFixed(max(0, min(MAX_DECIMALS, decimals))));
   }
 
-  return params;
+  // no positional or named args: just return Math.random() w/ default decimal precision
+  return +(Math.random().toFixed(max(0, min(MAX_DECIMALS, decimals))));
 }
 
 export default Helper.helper(random);

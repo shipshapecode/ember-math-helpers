@@ -75,7 +75,7 @@ test('one positional argument', function(assert) {
 test('two positional arguments', function(assert) {
   message = 'returns a random whole number between two upper and lower bound postional args, inclusive';
   passCount = range(1, SAMPLE_SIZE).reduce((acc) => {
-    randVal = random([21, 1797]);
+    randVal = random([1797, 21]);
 
     satisfied = randVal >= 21 && randVal <= 1797;
 
