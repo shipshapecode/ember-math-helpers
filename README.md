@@ -20,23 +20,34 @@ HTMLBars template helpers for doing basic arithmetic operations
 
 ## Usage
 
+### Basic Arithmetic
+Helper | JavaScript | HTMLBars
+-------|------------|---------------
+add    | `a + b`    | `{{add a b}}`
+div    | `a / b`    | `{{div a b}}`
+mod    | `a % b`    | `{{mod a b}}`
+mult   | `a * b`    | `{{mult a b}}`
+sub    | `a - b`    | `{{sub a b}}`
+
+### Math
+Helper  | JavaScript                  | HTMLBars
+--------|---------------------------|----------------------
+ceil    | `Math.ceil(a)`            | `{{ceil a}}`
+floor   | `Math.floor(a)`           | `{{floor a}}`
+max     | `Math.max([a, b, c...])`  | `{{max a b c }}`
+min     | `Math.min([a, b, c...])`  | `{{min a b c }}`
+pow     | `Math.pow(a, b)`          | `{{pow a b}}`
+round   | `Math.round(a)`           | `{{round a}}`
+sqrt    | `Math.sqrt(a)`            | `{{sqrt a}}`
+
+
+### Random
 Helper                                       | JavaScript                                                                | HTMLBars
 ---------------------------------------------|---------------------------------------------------------------------------|--------------
-add                                          | `a + b`                                                                   | `{{add a b}}`
-ceil                                         | `Math.ceil(a)`                                                            | `{{ceil a}}`
-div                                          | `a / b`                                                                   | `{{div a b}}`
-floor                                        | `Math.floor(a)`                                                           | `{{floor a}}`
-max                                          | `Math.max([a, b, c...])`                                                  | `{{max a b c }}`
-min                                          | `Math.min([a, b, c...])`                                                  | `{{min a b c }}`
-mod                                          | `a % b`                                                                   | `{{mod a b}}`
-mult                                         | `a * b`                                                                   | `{{mult a b}}`
-pow                                          | `Math.pow(a, b)`                                                          | `{{pow a b}}`
 random (No Args) [, decimals]                | `Math.random()`, `decimals` sets precision from 0-20 (default: 0)         | `{{random}}` or `{{random decimals=4}}`
 random (Upper Bound) [, round]               | capped `Math.random()`, `decimals` sets precision from 0-20 (default: 0)  | `{{random 42}}` or `{{random 42 decimals=4}}`
 random (Upper Bound, Lower Bound) [, round]) | bounded `Math.random()`, `decimals` sets precision from 0-20 (default: 0) | `{{random 21 1797}}` or `{{random 21 1797 decimals=4}}`
-round                                        | `Math.round(a)`                                                           | `{{round a}}`
-sqrt                                         | `Math.sqrt(a)`                                                            | `{{sqrt a}}`
-sub                                          | `a - b`                                                                   | `{{sub a b}}`
+
 
 You can pass as many arguments as you would like to the helpers. For something like
 `10 - 1 - 2 - 3` you could do:
