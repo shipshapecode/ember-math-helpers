@@ -36,11 +36,13 @@ We decided we should support the entirety of the JS `Math` methods, so this list
 Helper  | JavaScript                  | HTMLBars
 --------|---------------------------|----------------------
 ceil    | `Math.ceil(a)`            | `{{ceil a}}`
+cos     | `Math.cos(a)`             | `{{cos a}}`
 floor   | `Math.floor(a)`           | `{{floor a}}`
 max     | `Math.max([a, b, c...])`  | `{{max a b c}}`
 min     | `Math.min([a, b, c...])`  | `{{min a b c}}`
 pow     | `Math.pow(a, b)`          | `{{pow a b}}`
 round   | `Math.round(a)`           | `{{round a}}`
+sin     | `Math.sin(a)`             | `{{sin a}}`
 sqrt    | `Math.sqrt(a)`            | `{{sqrt a}}`
 
 
