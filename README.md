@@ -44,6 +44,7 @@ pow     | `Math.pow(a, b)`          | `{{pow a b}}`
 round   | `Math.round(a)`           | `{{round a}}`
 sin     | `Math.sin(a)`             | `{{sin a}}`
 sqrt    | `Math.sqrt(a)`            | `{{sqrt a}}`
+trunc   | `Math.trunc(a)`           | `{{trunc a}}`
 
 
 ### Random
