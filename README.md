@@ -39,6 +39,7 @@ abs     | `Math.abs(a)`             | `{{abs a}}`
 acos    | `Math.acos(a)`            | `{{acos a}}`
 acosh   | `Math.acosh(a)`           | `{{acosh a}}`
 asin    | `Math.asin(a)`            | `{{asin a}}`
+asinh   | `Math.asinh(a)`           | `{{asinh a}}`
 ceil    | `Math.ceil(a)`            | `{{ceil a}}`
 cos     | `Math.cos(a)`             | `{{cos a}}`
 floor   | `Math.floor(a)`           | `{{floor a}}`
