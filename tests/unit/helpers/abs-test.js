@@ -22,6 +22,6 @@ test('absolute value of `null`, empty string, and empty array all equal 0', func
 });
 
 test('absolute value of empty object literal equals `NaN`', function(assert) {
-  let result = abs([{}]);
+  const result = abs([{}]);
   assert.ok(isNaN(result));
 });

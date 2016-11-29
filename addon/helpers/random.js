@@ -24,7 +24,7 @@ export function random(params, { decimals } = DEFAULT_OPTS) {
 
   // one positional arg: treat it as an upper bound
   if (params && params.length === 1) {
-    let [upperBound] = params;
+    const [upperBound] = params;
 
     return +((Math.random() * upperBound).toFixed(max(0, min(MAX_DECIMALS, decimals))));
   }
