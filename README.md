@@ -36,6 +36,7 @@ We decided we should support the entirety of the JS `Math` methods, so this list
 Helper  | JavaScript                  | HTMLBars
 --------|---------------------------|----------------------
 abs     | `Math.abs(a)`             | `{{abs a}}`
+acos    | `Math.acos(a)`            | `{{acos a}}`
 ceil    | `Math.ceil(a)`            | `{{ceil a}}`
 cos     | `Math.cos(a)`             | `{{cos a}}`
 floor   | `Math.floor(a)`           | `{{floor a}}`
