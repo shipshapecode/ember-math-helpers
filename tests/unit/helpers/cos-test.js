@@ -1,4 +1,3 @@
-
 import { cos } from 'dummy/helpers/cos';
 import { module, test } from 'qunit';
 

@@ -1,4 +1,3 @@
-
 import { acos } from 'dummy/helpers/acos';
 import { module, test } from 'qunit';
 

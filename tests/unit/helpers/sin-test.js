@@ -1,4 +1,3 @@
-
 import { sin } from 'dummy/helpers/sin';
 import { module, test } from 'qunit';
 
