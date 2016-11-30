@@ -50,7 +50,7 @@
     "ember-debonair": "0.1.6",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.0.5",
-    "ember-load-initializers": "^0.5.1",
+    "ember-load-initializers": "^0.6.0",
     "ember-resolver": "^2.0.3",
     "ember-template-lint": "0.6.3",
     "eslint-plugin-ember-suave": "^1.0.0",
