@@ -40,7 +40,12 @@ acos    | `Math.acos(a)`            | `{{acos a}}`
 acosh   | `Math.acosh(a)`           | `{{acosh a}}`
 asin    | `Math.asin(a)`            | `{{asin a}}`
 asinh   | `Math.asinh(a)`           | `{{asinh a}}`
+atan    | `Math.atan(a)`            | `{{atan a}}`
+atanh   | `Math.atanh(a)`           | `{{atanh a}}`
+atan2   | `Math.atan2(a, b)`        | `{{atan2 a b}}`
+cbrt    | `Math.cbrt(a)`            | `{{cbrt a}}`
 ceil    | `Math.ceil(a)`            | `{{ceil a}}`
+clz32   | `Math.clz32(a)`           | `{{clz32 a}}`
 cos     | `Math.cos(a)`             | `{{cos a}}`
 floor   | `Math.floor(a)`           | `{{floor a}}`
 max     | `Math.max([a, b, c...])`  | `{{max a b c}}`
