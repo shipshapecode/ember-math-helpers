@@ -54,6 +54,7 @@ floor   | `Math.floor(a)`           | `{{floor a}}`
 fround  | `Math.fround(a)`          | `{{fround a}}`
 hypot   | `Math.hypot([a, b, c...])`| `{{hypot a b c}}`
 imul    | `Math.imul(a, b)`         | `{{imul a b}}`
+log     | `Math.log(a)`             | `{{log a}}`
 max     | `Math.max([a, b, c...])`  | `{{max a b c}}`
 min     | `Math.min([a, b, c...])`  | `{{min a b c}}`
 pow     | `Math.pow(a, b)`          | `{{pow a b}}`
