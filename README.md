@@ -47,6 +47,7 @@ cbrt    | `Math.cbrt(a)`            | `{{cbrt a}}`
 ceil    | `Math.ceil(a)`            | `{{ceil a}}`
 clz32   | `Math.clz32(a)`           | `{{clz32 a}}`
 cos     | `Math.cos(a)`             | `{{cos a}}`
+cosh    | `Math.cosh(a)`            | `{{cosh a}}`
 floor   | `Math.floor(a)`           | `{{floor a}}`
 max     | `Math.max([a, b, c...])`  | `{{max a b c}}`
 min     | `Math.min([a, b, c...])`  | `{{min a b c}}`
