@@ -51,6 +51,8 @@ cosh    | `Math.cosh(a)`            | `{{cosh a}}`
 exp     | `Math.exp(a)`             | `{{exp a}}`
 expm1   | `Math.expm1(a)`           | `{{expm1 a}}`
 floor   | `Math.floor(a)`           | `{{floor a}}`
+fround  | `Math.fround(a)`          | `{{fround a}}`
+hypot   | `Math.hypot([a, b, c...])`| `{{hypot a b c}}`
 max     | `Math.max([a, b, c...])`  | `{{max a b c}}`
 min     | `Math.min([a, b, c...])`  | `{{min a b c}}`
 pow     | `Math.pow(a, b)`          | `{{pow a b}}`
