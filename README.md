@@ -48,6 +48,8 @@ ceil    | `Math.ceil(a)`            | `{{ceil a}}`
 clz32   | `Math.clz32(a)`           | `{{clz32 a}}`
 cos     | `Math.cos(a)`             | `{{cos a}}`
 cosh    | `Math.cosh(a)`            | `{{cosh a}}`
+exp     | `Math.exp(a)`             | `{{exp a}}`
+expm1   | `Math.expm1(a)`           | `{{expm1 a}}`
 floor   | `Math.floor(a)`           | `{{floor a}}`
 max     | `Math.max([a, b, c...])`  | `{{max a b c}}`
 min     | `Math.min([a, b, c...])`  | `{{min a b c}}`
