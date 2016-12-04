@@ -55,6 +55,9 @@ fround  | `Math.fround(a)`          | `{{fround a}}`
 hypot   | `Math.hypot([a, b, c...])`| `{{hypot a b c}}`
 imul    | `Math.imul(a, b)`         | `{{imul a b}}`
 log     | `Math.log(a)`             | `{{log a}}`
+log1p   | `Math.log1p(a)`           | `{{log1p a}}`
+log10   | `Math.log10(a)`           | `{{log10 a}}`
+log2    | `Math.log2(a)`            | `{{log2 a}}`
 max     | `Math.max([a, b, c...])`  | `{{max a b c}}`
 min     | `Math.min([a, b, c...])`  | `{{min a b c}}`
 pow     | `Math.pow(a, b)`          | `{{pow a b}}`
