@@ -62,8 +62,11 @@ max     | `Math.max([a, b, c...])`  | `{{max a b c}}`
 min     | `Math.min([a, b, c...])`  | `{{min a b c}}`
 pow     | `Math.pow(a, b)`          | `{{pow a b}}`
 round   | `Math.round(a)`           | `{{round a}}`
+sign    | `Math.round(a)`           | `{{sign a}}`
 sin     | `Math.sin(a)`             | `{{sin a}}`
 sqrt    | `Math.sqrt(a)`            | `{{sqrt a}}`
+tan     | `Math.tan(a)`             | `{{tan a}}`
+tanh    | `Math.tanh(a)`            | `{{tanh a}}`
 trunc   | `Math.trunc(a)`           | `{{trunc a}}`
 
 

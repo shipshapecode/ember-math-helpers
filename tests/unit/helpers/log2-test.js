@@ -1,4 +1,4 @@
-import { lo2 } from 'dummy/helpers/log2';
+import { log2 } from 'dummy/helpers/log2';
 import { module, test } from 'qunit';
 
 module('Unit | Helper | log2');
