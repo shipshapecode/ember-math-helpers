@@ -54,7 +54,7 @@ floor   | `Math.floor(a)`           | `{{floor a}}`
 fround  | `Math.fround(a)`          | `{{fround a}}`
 hypot   | `Math.hypot([a, b, c...])`| `{{hypot a b c}}`
 imul    | `Math.imul(a, b)`         | `{{imul a b}}`
-log     | `Math.log(a)`             | `{{log a}}`
+log-e   | `Math.log(a)`             | `{{log-e a}}`
 log1p   | `Math.log1p(a)`           | `{{log1p a}}`
 log10   | `Math.log10(a)`           | `{{log10 a}}`
 log2    | `Math.log2(a)`            | `{{log2 a}}`
