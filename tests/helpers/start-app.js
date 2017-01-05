@@ -1,14 +1,13 @@
 import Ember from 'ember';
 import Application from '../../app';
 import config from '../../config/environment';
-import assign from 'ember-assign-polyfill';
-const { run } = Ember;
+const { merge, run } = Ember;
 
 export default function startApp(attrs) {
   let application;
 
-  // use defaults, but you can override
-  const attributes = assign({}, config.APP, attrs);
+  let attributes = merge({}, config.APP);
+  attributes = merge(attributes, attrs); // use defaults, but you can override;
 
   run(() => {
     application = Application.create(attributes);
