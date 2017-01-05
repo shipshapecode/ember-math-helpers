@@ -1939,7 +1939,7 @@ ember-cli-release@^0.2.9:
     semver "^4.3.1"
     silent-error "^1.0.0"
 
-ember-cli-sass@6.0.0, ember-cli-sass@^6.0.0:
+ember-cli-sass@6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/ember-cli-sass/-/ember-cli-sass-6.0.0.tgz#31c9c8fa789c0d25aaf8e315431b7a3ec4ba0175"
   dependencies:
@@ -2083,9 +2083,9 @@ ember-cli@2.10.0:
     walk-sync "^0.3.0"
     yam "0.0.22"
 
-ember-debonair@0.1.6:
-  version "0.1.6"
-  resolved "https://registry.npmjs.org/ember-debonair/-/ember-debonair-0.1.6.tgz#3c3ad9715b1fef7112eea011bfb554502a43b37d"
+ember-debonair@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.npmjs.org/ember-debonair/-/ember-debonair-0.3.0.tgz#a0be0e50ebfb6a9ab67cf6e8c9c6d26d4c9a92a8"
   dependencies:
     ember-cli-babel "^5.1.7"
 
@@ -2741,7 +2741,7 @@ flexi@html-next/flexi:
     ember-cli-babel "^5.1.6"
     ember-cli-htmlbars "^1.0.3"
     ember-cli-preprocess-registry "^3.0.0"
-    ember-cli-sass "6.0.0"
+    ember-cli-sass "^5.3.1"
     ember-getowner-polyfill "^1.0.1"
     object-assign "^4.0.1"
     rsvp "^3.2.0"
