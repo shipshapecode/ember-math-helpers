@@ -28,9 +28,22 @@ h1 {
   font-size: 6vw;
 }
 
+input {
+  font-size: 12pt;
+  padding: 10px;
+  margin: 10px;
+  width: 65px;
+}
+
+.operator {
+  text-align: center;
+  width: 20px;
+}
+
 .result {
-  margin-left: 0.5em;
   color: $bloodOrange;
+  margin-left: 0.5em;
+  width: 25px;
 }
 
 .centered {

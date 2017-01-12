@@ -7,23 +7,38 @@
 </centered>
 
 <centered>
-  1 + 2 = <span class="result">{{add 1 2}}</span>
+  {{input type="number" value=add1}}
+  <span class="operator">+</span>
+  {{input type="number" value=add2}}
+  = <span class="result">{{add add1 add2}}</span>
 </centered>
 
 <centered>
-  20 / 10 = <span class="result">{{div 20 10}}</span>
+  {{input type="number" value=div1}}
+  <span class="operator">/</span>
+  {{input type="number" value=div2}}
+  = <span class="result">{{div div1 div2}}</span>
 </centered>
 
 <centered>
-  11 % 10 = <span class="result">{{mod 11 10}}</span>
+  {{input type="number" value=mod1}}
+  <span class="operator">%</span>
+  {{input type="number" value=mod2}}
+  = <span class="result">{{mod mod1 mod2}}</span>
 </centered>
 
 <centered>
-  6 * 6 = <span class="result">{{mult 6 6}}</span>
+  {{input type="number" value=mult1}}
+  <span class="operator">*</span>
+  {{input type="number" value=mult2}}
+  = <span class="result">{{mult mult1 mult2}}</span>
 </centered>
 
 <centered>
-  10 - 2 = <span class="result">{{sub 10 2}}</span>
+  {{input type="number" value=sub1}}
+  <span class="operator">-</span>
+  {{input type="number" value=sub2}}
+  = <span class="result">{{sub sub1 sub2}}</span>
 </centered>
 
 <centered>
