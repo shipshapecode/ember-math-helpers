@@ -2108,6 +2108,13 @@ ember-getowner-polyfill@^1.0.1:
   dependencies:
     ember-cli-babel "^5.1.5"
 
+ember-let@0.5.4:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/ember-let/-/ember-let-0.5.4.tgz#4a5bb0a280db396e45f359c428823610c8c41c8e"
+  dependencies:
+    ember-cli-babel "^5.1.6"
+    ember-cli-version-checker "^1.1.6"
+
 ember-load-initializers@^0.6.0:
   version "0.6.2"
   resolved "https://registry.npmjs.org/ember-load-initializers/-/ember-load-initializers-0.6.2.tgz#9366227948a917874c74f2799f185cdc997d4062"
