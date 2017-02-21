@@ -59,7 +59,7 @@
     "ember-resolver": "^2.0.3",
     "ember-source": "^2.11.0",
     "eslint-plugin-ship-shape": "0.4.0",
-    "flexi": "2.0.0-beta.11",
+    "flexi": "2.0.0-beta.12",
     "loader.js": "^4.0.10"
   },
   "engines": {
