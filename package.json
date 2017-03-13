@@ -54,6 +54,7 @@
     "ember-cli-uglify": "^1.2.0",
     "ember-debonair": "0.3.0",
     "ember-disable-prototype-extensions": "^1.1.0",
+    "ember-dynamic-render-template": "github:miguelcobain/ember-dynamic-render-template#master",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.6.0",
     "ember-resolver": "^2.0.3",

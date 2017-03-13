@@ -1,6 +1,7 @@
 import Controller from 'ember-controller';
 
 export default Controller.extend({
+  addTemplate: '{{add 1 2}}',
   add1: 1,
   add2: 2,
   div1: 20,
