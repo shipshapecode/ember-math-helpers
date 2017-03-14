@@ -17,31 +17,23 @@
   </centered>
 
   <centered>
-    {{input type="number" value=div1}}
-    <span class="operator">/</span>
-    {{input type="number" value=div2}}
-    = <span class="result">{{div div1 div2}}</span>
+    {{input type="text" value=divTemplate}}
+    = <span class="result">{{render-template templateString=divTemplate}}</span>
   </centered>
 
   <centered>
-    {{input type="number" value=mod1}}
-    <span class="operator">%</span>
-    {{input type="number" value=mod2}}
-    = <span class="result">{{mod mod1 mod2}}</span>
+    {{input type="text" value=modTemplate}}
+    = <span class="result">{{render-template templateString=modTemplate}}</span>
   </centered>
 
   <centered>
-    {{input type="number" value=mult1}}
-    <span class="operator">*</span>
-    {{input type="number" value=mult2}}
-    = <span class="result">{{mult mult1 mult2}}</span>
+    {{input type="text" value=multTemplate}}
+    = <span class="result">{{render-template templateString=multTemplate}}</span>
   </centered>
 
   <centered>
-    {{input type="number" value=sub1}}
-    <span class="operator">-</span>
-    {{input type="number" value=sub2}}
-    = <span class="result">{{sub sub1 sub2}}</span>
+    {{input type="text" value=subTemplate}}
+    = <span class="result">{{render-template templateString=subTemplate}}</span>
   </centered>
 </box>
 
