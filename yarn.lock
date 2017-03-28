@@ -2,40 +2,37 @@
 # yarn lockfile v1
 
 
-"@html-next/flexi-config@2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.npmjs.org/@html-next/flexi-config/-/flexi-config-2.0.0-beta.12.tgz#af2fa4d90a6d1fb510511c1c02e51a9d6514eac6"
+"@html-next/flexi-config@2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@html-next/flexi-config/-/flexi-config-2.0.0-rc.1.tgz#a19417e5b5d1e85eb56df116b6892562ac17d259"
   dependencies:
     ember-cli-babel "^5.1.7"
 
-"@html-next/flexi-default-styles@2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.npmjs.org/@html-next/flexi-default-styles/-/flexi-default-styles-2.0.0-beta.12.tgz#5f7a58a85e63d84dc75172b4045f0430a91084b0"
+"@html-next/flexi-default-styles@2.0.0-rc.2":
+  version "2.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@html-next/flexi-default-styles/-/flexi-default-styles-2.0.0-rc.2.tgz#0d4f299e5a0e430354dd9142a5cdd7c7897978d5"
   dependencies:
-    "@html-next/flexi-config" "2.0.0-beta.12"
+    "@html-next/flexi-config" "2.0.0-rc.1"
     ember-cli-babel "^5.1.7"
     ember-cli-sass "^6.0.0"
     rsvp "^3.2.0"
 
-"@html-next/flexi-dsl@2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.npmjs.org/@html-next/flexi-dsl/-/flexi-dsl-2.0.0-beta.12.tgz#475f710c48f20c1bf8bbfc1a738e3245985870be"
+"@html-next/flexi-dsl@2.0.0-rc.2":
+  version "2.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@html-next/flexi-dsl/-/flexi-dsl-2.0.0-rc.2.tgz#7249585bb7a8519ea5af0ae542daa0d037921d8a"
   dependencies:
-    "@html-next/flexi-config" "2.0.0-beta.12"
-    chalk "^1.1.1"
-    debug "^2.2.0"
+    "@html-next/flexi-config" "2.0.0-rc.1"
     ember-cli-babel "^5.1.7"
     ember-cli-preprocess-registry "^3.0.0"
-    object-assign "^4.1.0"
     rsvp "^3.2.0"
 
-"@html-next/flexi-layouts@2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.npmjs.org/@html-next/flexi-layouts/-/flexi-layouts-2.0.0-beta.12.tgz#05c27c57436017fda8ea86fc40d7cc75e43cc53d"
+"@html-next/flexi-layouts@2.0.0-rc.2":
+  version "2.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@html-next/flexi-layouts/-/flexi-layouts-2.0.0-rc.2.tgz#09a60e09ea52ab387270df3c853bd860fa9c79c4"
   dependencies:
-    "@html-next/flexi-config" "2.0.0-beta.12"
+    "@html-next/flexi-config" "2.0.0-rc.1"
     broccoli-funnel "^1.0.1"
-    broccoli-merge-trees "^1.1.1"
+    broccoli-merge-trees "^2.0.0"
     broccoli-plugin "^1.2.1"
     chalk "^1.1.1"
     debug "^2.2.0"
@@ -775,6 +772,13 @@ broccoli-merge-trees@^1.0.0, broccoli-merge-trees@^1.1.0, broccoli-merge-trees@^
     heimdalljs-logger "^0.1.7"
     rimraf "^2.4.3"
     symlink-or-copy "^1.0.0"
+
+broccoli-merge-trees@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/broccoli-merge-trees/-/broccoli-merge-trees-2.0.0.tgz#10aea46dd5cebcc8b8f7d5a54f0a84a4f0bb90b9"
+  dependencies:
+    broccoli-plugin "^1.3.0"
+    merge-trees "^1.0.1"
 
 broccoli-middleware@^1.0.0-beta.8:
   version "1.0.0-beta.8"
@@ -1679,9 +1683,9 @@ ember-cli-version-checker@^1.0.2, ember-cli-version-checker@^1.1.4, ember-cli-ve
   dependencies:
     semver "^5.3.0"
 
-ember-cli@2.12.0:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-2.12.0.tgz#1dd081ef736570d76600ae6f7dfd043b55ac41f5"
+ember-cli@2.12.1:
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-2.12.1.tgz#33dd9341677f67f29bc0e286b129877ee15e5bcb"
   dependencies:
     amd-name-resolver "0.0.6"
     bower-config "^1.3.0"
@@ -2370,12 +2374,13 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-flexi@2.0.0-beta.12:
-  version "2.0.0-beta.12"
-  resolved "https://registry.npmjs.org/flexi/-/flexi-2.0.0-beta.12.tgz#ef67768f1c78c8132a804da04ec991b1112461a1"
+flexi@2.0.0-rc.1:
+  version "2.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/flexi/-/flexi-2.0.0-rc.1.tgz#8afeb6ea4487b2fc61a7319a4b72cfae725dc5ff"
   dependencies:
-    "@html-next/flexi-config" "2.0.0-beta.12"
+    chalk "^1.1.3"
     ember-cli-babel "^5.1.7"
+    semver "^5.3.0"
 
 for-in@^1.0.1:
   version "1.0.2"
@@ -3569,6 +3574,17 @@ merge-descriptors@1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
 
+merge-trees@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/merge-trees/-/merge-trees-1.0.1.tgz#ccbe674569787f9def17fd46e6525f5700bbd23e"
+  dependencies:
+    can-symlink "^1.0.0"
+    fs-tree-diff "^0.5.4"
+    heimdalljs "^0.2.1"
+    heimdalljs-logger "^0.1.7"
+    rimraf "^2.4.3"
+    symlink-or-copy "^1.0.0"
+
 merge@^1.1.3, merge@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/merge/-/merge-1.2.0.tgz#7531e39d4949c281a66b8c5a6e0265e8b05894da"
@@ -4200,22 +4216,11 @@ read-pkg@^1.0.0:
     normalize-package-data "^2.3.2"
     path-type "^1.0.0"
 
-readable-stream@^2, readable-stream@^2.2.2:
+readable-stream@^2, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.1, readable-stream@^2.2.2:
   version "2.2.3"
   resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-2.2.3.tgz#9cf49463985df016c8ae8813097a9293a9b33729"
   dependencies:
     buffer-shims "^1.0.0"
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "~1.0.0"
-    process-nextick-args "~1.0.6"
-    string_decoder "~0.10.x"
-    util-deprecate "~1.0.1"
-
-"readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.1, readable-stream@~2.0.5:
-  version "2.0.6"
-  resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
-  dependencies:
     core-util-is "~1.0.0"
     inherits "~2.0.1"
     isarray "~1.0.0"
@@ -4231,6 +4236,17 @@ readable-stream@~1.0.2:
     inherits "~2.0.1"
     isarray "0.0.1"
     string_decoder "~0.10.x"
+
+readable-stream@~2.0.5:
+  version "2.0.6"
+  resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "~1.0.0"
+    process-nextick-args "~1.0.6"
+    string_decoder "~0.10.x"
+    util-deprecate "~1.0.1"
 
 readline2@^1.0.1:
   version "1.0.1"
