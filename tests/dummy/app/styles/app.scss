@@ -21,6 +21,10 @@ body {
   padding: 1rem 1.3rem;
 }
 
+centered {
+  text-align: center;
+}
+
 h1 {
   .pacifico {
     font-family: 'Pacifico';
@@ -32,7 +36,7 @@ input {
   font-size: 12pt;
   padding: 10px;
   margin: 10px;
-  width: 125px;
+  width: 150px;
 }
 
 .operator {
@@ -44,10 +48,6 @@ input {
   color: $bloodOrange;
   margin-left: 0.5em;
   width: 25px;
-}
-
-.centered {
-  text-align: center;
 }
 
 .content-section {

@@ -42,11 +42,13 @@
     <h3>Composable Examples</h3>
   </centered>
   <centered>
-    10 - 1 - 2 - 3 = <span class="result">{{sub 10 1 2 3}}</span>
+    {{input type="text" value=composableSub}}
+    = <span class="result">{{render-template templateString=composableSub}}</span>
   </centered>
 
   <centered>
-    (15 + 5) / 2 * 10 = <span class="result">{{mult (div (add 15 5) 2) 10}}</span>
+    {{input type="text" value=composableComplex}}
+    = <span class="result">{{render-template templateString=composableComplex}}</span>
   </centered>
 </box>
 

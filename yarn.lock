@@ -86,40 +86,37 @@
   dependencies:
     "@glimmer/util" "^0.22.0"
 
-"@html-next/flexi-config@2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.npmjs.org/@html-next/flexi-config/-/flexi-config-2.0.0-beta.12.tgz#af2fa4d90a6d1fb510511c1c02e51a9d6514eac6"
+"@html-next/flexi-config@2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://registry.npmjs.org/@html-next/flexi-config/-/flexi-config-2.0.0-rc.1.tgz#a19417e5b5d1e85eb56df116b6892562ac17d259"
   dependencies:
     ember-cli-babel "^5.1.7"
 
-"@html-next/flexi-default-styles@2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.npmjs.org/@html-next/flexi-default-styles/-/flexi-default-styles-2.0.0-beta.12.tgz#5f7a58a85e63d84dc75172b4045f0430a91084b0"
+"@html-next/flexi-default-styles@2.0.0-rc.2":
+  version "2.0.0-rc.2"
+  resolved "https://registry.npmjs.org/@html-next/flexi-default-styles/-/flexi-default-styles-2.0.0-rc.2.tgz#0d4f299e5a0e430354dd9142a5cdd7c7897978d5"
   dependencies:
-    "@html-next/flexi-config" "2.0.0-beta.12"
+    "@html-next/flexi-config" "2.0.0-rc.1"
     ember-cli-babel "^5.1.7"
     ember-cli-sass "^6.0.0"
     rsvp "^3.2.0"
 
-"@html-next/flexi-dsl@2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.npmjs.org/@html-next/flexi-dsl/-/flexi-dsl-2.0.0-beta.12.tgz#475f710c48f20c1bf8bbfc1a738e3245985870be"
+"@html-next/flexi-dsl@2.0.0-rc.2":
+  version "2.0.0-rc.2"
+  resolved "https://registry.npmjs.org/@html-next/flexi-dsl/-/flexi-dsl-2.0.0-rc.2.tgz#7249585bb7a8519ea5af0ae542daa0d037921d8a"
   dependencies:
-    "@html-next/flexi-config" "2.0.0-beta.12"
-    chalk "^1.1.1"
-    debug "^2.2.0"
+    "@html-next/flexi-config" "2.0.0-rc.1"
     ember-cli-babel "^5.1.7"
     ember-cli-preprocess-registry "^3.0.0"
-    object-assign "^4.1.0"
     rsvp "^3.2.0"
 
-"@html-next/flexi-layouts@2.0.0-beta.12":
-  version "2.0.0-beta.12"
-  resolved "https://registry.npmjs.org/@html-next/flexi-layouts/-/flexi-layouts-2.0.0-beta.12.tgz#05c27c57436017fda8ea86fc40d7cc75e43cc53d"
+"@html-next/flexi-layouts@2.0.0-rc.2":
+  version "2.0.0-rc.2"
+  resolved "https://registry.npmjs.org/@html-next/flexi-layouts/-/flexi-layouts-2.0.0-rc.2.tgz#09a60e09ea52ab387270df3c853bd860fa9c79c4"
   dependencies:
-    "@html-next/flexi-config" "2.0.0-beta.12"
+    "@html-next/flexi-config" "2.0.0-rc.1"
     broccoli-funnel "^1.0.1"
-    broccoli-merge-trees "^1.1.1"
+    broccoli-merge-trees "^2.0.0"
     broccoli-plugin "^1.2.1"
     chalk "^1.1.1"
     debug "^2.2.0"
@@ -446,7 +443,7 @@ babel-core@^6.14.0, babel-core@^6.24.1:
     slash "^1.0.0"
     source-map "^0.5.0"
 
-babel-eslint@^7.1.0, babel-eslint@^7.1.1:
+babel-eslint@^7.1.0:
   version "7.1.1"
   resolved "https://registry.npmjs.org/babel-eslint/-/babel-eslint-7.1.1.tgz#8a6a884f085aa7060af69cfc77341c2f99370fb2"
   dependencies:
@@ -455,6 +452,15 @@ babel-eslint@^7.1.0, babel-eslint@^7.1.1:
     babel-types "^6.15.0"
     babylon "^6.13.0"
     lodash.pickby "^4.6.0"
+
+babel-eslint@^7.2.3:
+  version "7.2.3"
+  resolved "https://registry.npmjs.org/babel-eslint/-/babel-eslint-7.2.3.tgz#b2fe2d80126470f5c19442dc757253a897710827"
+  dependencies:
+    babel-code-frame "^6.22.0"
+    babel-traverse "^6.23.1"
+    babel-types "^6.23.0"
+    babylon "^6.17.0"
 
 babel-generator@^6.24.1:
   version "6.24.1"
@@ -950,7 +956,7 @@ babel-traverse@^6.15.0:
     invariant "^2.2.0"
     lodash "^4.2.0"
 
-babel-traverse@^6.24.1:
+babel-traverse@^6.23.1, babel-traverse@^6.24.1:
   version "6.24.1"
   resolved "https://registry.npmjs.org/babel-traverse/-/babel-traverse-6.24.1.tgz#ab36673fd356f9a0948659e7b338d5feadb31695"
   dependencies:
@@ -964,7 +970,7 @@ babel-traverse@^6.24.1:
     invariant "^2.2.0"
     lodash "^4.2.0"
 
-babel-types@^6.15.0, babel-types@^6.23.0:
+babel-types@^6.15.0:
   version "6.23.0"
   resolved "https://registry.npmjs.org/babel-types/-/babel-types-6.23.0.tgz#bb17179d7538bad38cd0c9e115d340f77e7e9acf"
   dependencies:
@@ -973,7 +979,7 @@ babel-types@^6.15.0, babel-types@^6.23.0:
     lodash "^4.2.0"
     to-fast-properties "^1.0.1"
 
-babel-types@^6.19.0, babel-types@^6.24.1:
+babel-types@^6.19.0, babel-types@^6.23.0, babel-types@^6.24.1:
   version "6.24.1"
   resolved "https://registry.npmjs.org/babel-types/-/babel-types-6.24.1.tgz#a136879dc15b3606bda0d90c1fc74304c2ff0975"
   dependencies:
@@ -989,6 +995,10 @@ babylon@^5.8.38:
 babylon@^6.11.0, babylon@^6.13.0, babylon@^6.15.0:
   version "6.16.1"
   resolved "https://registry.npmjs.org/babylon/-/babylon-6.16.1.tgz#30c5a22f481978a9e7f8cdfdf496b11d94b404d3"
+
+babylon@^6.17.0:
+  version "6.17.0"
+  resolved "https://registry.npmjs.org/babylon/-/babylon-6.17.0.tgz#37da948878488b9c4e3c4038893fa3314b3fc932"
 
 backbone@^1.1.2:
   version "1.3.3"
@@ -2026,14 +2036,6 @@ electron-to-chromium@^1.2.7:
   version "1.3.8"
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.8.tgz#b2c8a2c79bb89fbbfd3724d9555e15095b5f5fb6"
 
-ember-cli-app-version@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/ember-cli-app-version/-/ember-cli-app-version-2.0.2.tgz#aaeede608e92fae6c2e11f63d28a373c1cc3f070"
-  dependencies:
-    ember-cli-babel "^5.1.6"
-    ember-cli-htmlbars "^1.0.0"
-    git-repo-version "0.4.1"
-
 ember-cli-babel@^5.1.3, ember-cli-babel@^5.1.5, ember-cli-babel@^5.1.6, ember-cli-babel@^5.1.7:
   version "5.2.4"
   resolved "https://registry.npmjs.org/ember-cli-babel/-/ember-cli-babel-5.2.4.tgz#5ce4f46b08ed6f6d21e878619fb689719d6e8e13"
@@ -2069,9 +2071,9 @@ ember-cli-broccoli-sane-watcher@^2.0.4:
     rsvp "^3.0.18"
     sane "^1.1.1"
 
-ember-cli-code-coverage@0.3.11:
-  version "0.3.11"
-  resolved "https://registry.npmjs.org/ember-cli-code-coverage/-/ember-cli-code-coverage-0.3.11.tgz#9012e14ec5d6ef27d7c6b89d4c8c22b5a49709be"
+ember-cli-code-coverage@0.3.12:
+  version "0.3.12"
+  resolved "https://registry.npmjs.org/ember-cli-code-coverage/-/ember-cli-code-coverage-0.3.12.tgz#6139ad643e882c8dd738f6bc0b480fcfd3a4b351"
   dependencies:
     babel-core "^5.8.38"
     body-parser "^1.15.0"
@@ -2131,7 +2133,7 @@ ember-cli-htmlbars-inline-precompile@^0.4.0-beta.2:
     ember-cli-version-checker "^1.2.0"
     hash-for-dep "^1.0.2"
 
-ember-cli-htmlbars@^1.0.0, ember-cli-htmlbars@^1.1.1:
+ember-cli-htmlbars@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/ember-cli-htmlbars/-/ember-cli-htmlbars-1.1.1.tgz#8776cf59796dac8f32e8625fc6d1ea45ffa55de1"
   dependencies:
@@ -2976,12 +2978,13 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-flexi@2.0.0-beta.12:
-  version "2.0.0-beta.12"
-  resolved "https://registry.npmjs.org/flexi/-/flexi-2.0.0-beta.12.tgz#ef67768f1c78c8132a804da04ec991b1112461a1"
+flexi@2.0.0-rc.1:
+  version "2.0.0-rc.1"
+  resolved "https://registry.npmjs.org/flexi/-/flexi-2.0.0-rc.1.tgz#8afeb6ea4487b2fc61a7319a4b72cfae725dc5ff"
   dependencies:
-    "@html-next/flexi-config" "2.0.0-beta.12"
+    chalk "^1.1.3"
     ember-cli-babel "^5.1.7"
+    semver "^5.3.0"
 
 for-in@^1.0.1:
   version "1.0.2"
@@ -3151,16 +3154,6 @@ getpass@^0.1.1:
 git-repo-info@^1.4.1:
   version "1.4.1"
   resolved "https://registry.npmjs.org/git-repo-info/-/git-repo-info-1.4.1.tgz#2a072823254aaf62fcf0766007d7b6651bd41943"
-
-git-repo-info@~1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/git-repo-info/-/git-repo-info-1.2.0.tgz#43d8513e04a24dd441330a2f7c6655a709fdbaf2"
-
-git-repo-version@0.4.1:
-  version "0.4.1"
-  resolved "https://registry.npmjs.org/git-repo-version/-/git-repo-version-0.4.1.tgz#75fab9a0a4ec8470755b0eea7fdaa6f9d41453bf"
-  dependencies:
-    git-repo-info "~1.2.0"
 
 glob-base@^0.3.0:
   version "0.3.0"
@@ -3874,9 +3867,9 @@ load-json-file@^1.0.0:
     pinkie-promise "^2.0.0"
     strip-bom "^2.0.0"
 
-loader.js@^4.0.10:
-  version "4.2.3"
-  resolved "https://registry.npmjs.org/loader.js/-/loader.js-4.2.3.tgz#845228877aa5317209e41f6c00d9bab36a6a4808"
+loader.js@^4.2.3:
+  version "4.3.0"
+  resolved "https://registry.npmjs.org/loader.js/-/loader.js-4.3.0.tgz#736c13eb8afdf75abd6c2d7b4f7fd40e1105a71f"
 
 locate-path@^2.0.0:
   version "2.0.0"
