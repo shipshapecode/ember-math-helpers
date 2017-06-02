@@ -44,6 +44,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.locationType = 'hash';
+    ENV.rootURL = '/ember-math-helpers/';
   }
 
   return ENV;
