@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@html-next/flexi-config": "2.0.0-rc.1",
-    "@html-next/flexi-default-styles": "2.0.0-rc.2",
+    "@html-next/flexi-default-styles": "2.0.0",
     "@html-next/flexi-dsl": "2.0.0-rc.2",
     "@html-next/flexi-layouts": "2.0.0-rc.2",
     "babel-eslint": "^7.2.3",
