@@ -29,10 +29,10 @@
     "ember-cli-babel": "^6.0.0"
   },
   "devDependencies": {
-    "@html-next/flexi-config": "2.0.0-rc.1",
+    "@html-next/flexi-config": "2.0.0",
     "@html-next/flexi-default-styles": "2.0.0-rc.2",
     "@html-next/flexi-dsl": "2.0.1",
-    "@html-next/flexi-layouts": "2.0.0-rc.2",
+    "@html-next/flexi-layouts": "2.0.1",
     "babel-eslint": "^7.2.3",
     "broccoli-asset-rev": "^2.4.5",
     "codeclimate-test-reporter": "^0.5.0",
@@ -58,7 +58,7 @@
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.14.0-beta.3",
     "eslint-plugin-ship-shape": "0.4.0",
-    "flexi": "2.0.0-rc.1",
+    "flexi": "2.0.1",
     "loader.js": "^4.2.3"
   },
   "engines": {
