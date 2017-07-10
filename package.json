@@ -26,7 +26,8 @@
     "deploy": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.0.0"
+    "ember-cli-babel": "^6.3.0",
+    "ember-cli-htmlbars": "^2.0.1"
   },
   "devDependencies": {
     "@html-next/flexi-config": "^2.0.0",
@@ -42,7 +43,6 @@
     "ember-cli-deploy-build": "^1.1.0",
     "ember-cli-deploy-ghpages": "^0.2.0",
     "ember-cli-eslint": "^4.0.0",
-    "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^0.4.3",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.0.0",
