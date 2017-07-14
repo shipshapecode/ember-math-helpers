@@ -1,18 +1,28 @@
 ---
 language: node_js
 node_js:
-  - "6"
+  # we recommend testing addons with the same minimum supported node version as Ember CLI
+  # so that your addon works for all apps
+  - "4"
 
 sudo: false
 dist: trusty
+
+addons:
+  chrome: stable
+  code_climate:
+    repo_token:
+      secure: "RtTWSoGnbxP7DO4Szr4nM3VQR0utwc8yg7PST4mmLWmfmWsye/3hee41VXsjJLidrRocELm7aiwP3W7YT/OAE8p6lYsvIuqKJKdm0LvQmH4kSWTUbh1398nLPf9Es/bCJy9Z3RrZfvEq5e5JeUG+rSS6u0B2GKOyIrg5fMBw3Ki3J1pV43fuGFJQzgUfF+HbHorr0LjacBrMjXcfR9RPM0MBCQNUarlaWews6AEuNnMRYT7kNW8QeX1bbxG401vNtgC5owEK1xQVJYvWMUnHkzk5pS9mIgNdV++Njh3WIgOSNqPEKZo64SsbYwVXBNrMTnk6ZUg756KhTxXR0i8/6Rhc9et/hKyznRvtkQ58es0XYDjQjseguCgMI3KwEcDAaHyYYAAgM7VCMMQU7Vs4WJjBEpKF2QeqJRevUSsPM9/XqHUYNxPph5NOgdZVN4qYCKJLvZwLbbMBT+CBMn7u+uxvjGSTz9dSleEbf0tnEGnyX0B7v7rqPiEjXXYrGip8lbN8YRR9nHgduTO2B7slSbV2QRtT+qJGBHtHYHDy/XcTsO3ppY1X09YPd+/JVfSYFCpIVoAvr9qIstR7bGtCPmv7j429/6zNF1/umjBVtocX+HLIgVB6WBLttP1pt6BB0oj4r25PHPsQA5s3Lfcwi/+yxzcMXTNIEGtM9tn7HkE="
+
 
 cache:
   yarn: true
 
 env:
-  # we recommend testing LTS's and latest stable release (bonus points to beta/canary)
-  - EMBER_TRY_SCENARIO=ember-lts-2.4
+  # we recommend new addons test the current and previous LTS
+  # as well as latest stable release (bonus points to beta/canary)
   - EMBER_TRY_SCENARIO=ember-lts-2.8
+  - EMBER_TRY_SCENARIO=ember-lts-2.12
   - EMBER_TRY_SCENARIO=ember-release
   - EMBER_TRY_SCENARIO=ember-beta
   - EMBER_TRY_SCENARIO=ember-canary
@@ -28,7 +38,7 @@ before_install:
   - export PATH=$HOME/.yarn/bin:$PATH
 
 install:
-  - yarn install --force
+  - yarn install --no-lockfile --non-interactive
 
 script:
   # Usually, it's ok to finish the test scenario without reverting
@@ -37,9 +47,3 @@ script:
 
 after_script:
   - codeclimate-test-reporter < coverage/lcov.info
-
-addons:
-  chrome: stable
-  code_climate:
-    repo_token:
-    secure: "RtTWSoGnbxP7DO4Szr4nM3VQR0utwc8yg7PST4mmLWmfmWsye/3hee41VXsjJLidrRocELm7aiwP3W7YT/OAE8p6lYsvIuqKJKdm0LvQmH4kSWTUbh1398nLPf9Es/bCJy9Z3RrZfvEq5e5JeUG+rSS6u0B2GKOyIrg5fMBw3Ki3J1pV43fuGFJQzgUfF+HbHorr0LjacBrMjXcfR9RPM0MBCQNUarlaWews6AEuNnMRYT7kNW8QeX1bbxG401vNtgC5owEK1xQVJYvWMUnHkzk5pS9mIgNdV++Njh3WIgOSNqPEKZo64SsbYwVXBNrMTnk6ZUg756KhTxXR0i8/6Rhc9et/hKyznRvtkQ58es0XYDjQjseguCgMI3KwEcDAaHyYYAAgM7VCMMQU7Vs4WJjBEpKF2QeqJRevUSsPM9/XqHUYNxPph5NOgdZVN4qYCKJLvZwLbbMBT+CBMn7u+uxvjGSTz9dSleEbf0tnEGnyX0B7v7rqPiEjXXYrGip8lbN8YRR9nHgduTO2B7slSbV2QRtT+qJGBHtHYHDy/XcTsO3ppY1X09YPd+/JVfSYFCpIVoAvr9qIstR7bGtCPmv7j429/6zNF1/umjBVtocX+HLIgVB6WBLttP1pt6BB0oj4r25PHPsQA5s3Lfcwi/+yxzcMXTNIEGtM9tn7HkE="
