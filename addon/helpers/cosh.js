@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function cosh(params) {
   return Math.cosh(params[0]);
 }
 
-export default Helper.helper(cosh);
+export default helper(cosh);

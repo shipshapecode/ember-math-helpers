@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function cbrt(params) {
   return Math.cbrt(params[0]);
 }
 
-export default Helper.helper(cbrt);
+export default helper(cbrt);

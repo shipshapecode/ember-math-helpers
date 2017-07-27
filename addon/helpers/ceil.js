@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function ceil(params) {
   return Math.ceil(params[0]);
 }
 
-export default Helper.helper(ceil);
+export default helper(ceil);

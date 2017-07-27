@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function imul(params) {
   return Math.imul(params[0], params[1]);
 }
 
-export default Helper.helper(imul);
+export default helper(imul);

@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function round(number) {
   return Math.round(number[0]);
 }
 
-export default Helper.helper(round);
+export default helper(round);

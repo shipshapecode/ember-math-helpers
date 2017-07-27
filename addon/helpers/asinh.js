@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function asinh(params) {
   return Math.asinh(params[0]);
 }
 
-export default Helper.helper(asinh);
+export default helper(asinh);

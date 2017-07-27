@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function trunc(params) {
   return Math.trunc(params[0]);
 }
 
-export default Helper.helper(trunc);
+export default helper(trunc);

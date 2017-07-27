@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function max(params) {
   return Math.max(...params);
 }
 
-export default Helper.helper(max);
+export default helper(max);

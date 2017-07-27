@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function atan(params) {
   return Math.atan(params[0]);
 }
 
-export default Helper.helper(atan);
+export default helper(atan);

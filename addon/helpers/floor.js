@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function floor(params) {
   return Math.floor(params[0]);
 }
 
-export default Helper.helper(floor);
+export default helper(floor);

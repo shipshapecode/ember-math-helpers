@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function hypot(params) {
   return Math.hypot(...params);
 }
 
-export default Helper.helper(hypot);
+export default helper(hypot);

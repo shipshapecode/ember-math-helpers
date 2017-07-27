@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function sign(params) {
   return Math.sign(params[0]);
 }
 
-export default Helper.helper(sign);
+export default helper(sign);

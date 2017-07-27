@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function tan(params) {
   return Math.tan(params[0]);
 }
 
-export default Helper.helper(tan);
+export default helper(tan);

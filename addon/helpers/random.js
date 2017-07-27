@@ -1,7 +1,6 @@
-import Ember from 'ember';
+import { helper } from '@ember/component/helper';
+import { isArray } from '@ember/array';
 
-const { Helper } = Ember;
-const { isArray } = Array;
 const { min, max } = Math;
 
 // @see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed#max(0, min(MAX_DECIMALS, decimals))));
@@ -44,4 +43,4 @@ export function random(params, { decimals } = DEFAULT_OPTS) {
   return +(Math.random().toFixed(max(0, min(MAX_DECIMALS, decimals))));
 }
 
-export default Helper.helper(random);
+export default helper(random);

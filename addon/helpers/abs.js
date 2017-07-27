@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function abs(params) {
   return Math.abs(params[0]);
 }
 
-export default Helper.helper(abs);
+export default helper(abs);

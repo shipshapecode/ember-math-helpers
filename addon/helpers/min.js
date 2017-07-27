@@ -1,8 +1,7 @@
-import Ember from 'ember';
-const { Helper } = Ember;
+import { helper } from '@ember/component/helper';
 
 export function min(params) {
   return Math.min(...params);
 }
 
-export default Helper.helper(min);
+export default helper(min);
