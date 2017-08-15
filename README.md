@@ -2,7 +2,7 @@
 
 <a href="https://shipshape.io/"><img src="http://i.imgur.com/bU4ABmk.png" width="100" height="100"/></a>
 
-[![Join the chat at https://gitter.im/shipshapecode/ember-math-helpers](https://badges.gitter.im/shipshapecode/ember-math-helpers.svg)](https://gitter.im/shipshapecode/ember-math-helpers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Sponsor](https://app.codesponsor.io/embed/bnfiyuC9jfaRVvE6NRbanWqE/shipshapecode/ember-math-helpers.svg)](https://app.codesponsor.io/link/bnfiyuC9jfaRVvE6NRbanWqE/shipshapecode/ember-math-helpers)
 
 [![npm version](https://badge.fury.io/js/ember-math-helpers.svg)](http://badge.fury.io/js/ember-math-helpers)
 ![Download count all time](https://img.shields.io/npm/dt/ember-math-helpers.svg)
