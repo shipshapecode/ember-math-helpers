@@ -9,7 +9,7 @@ var difference = require('./lib/difference');
 module.exports = {
   name: 'ember-math-helpers',
 
-  included: function(app) {
+  included(app) {
     this._super.included.apply(this, arguments);
 
     // see: https://github.com/ember-cli/ember-cli/issues/3718
@@ -25,14 +25,14 @@ module.exports = {
     this.blacklist = this.generateBlacklist(config);
   },
 
-  treeForAddon: function() {
+  treeForAddon() {
     // see: https://github.com/ember-cli/ember-cli/issues/4463
     var tree = this._super.treeForAddon.apply(this, arguments);
     var moduleRegexp = '(^modules\/)?' + this.name + '\/helpers\/';
     return this.filterHelpers(tree, new RegExp(moduleRegexp, 'i'));
   },
 
-  filterHelpers: function(tree, regex) {
+  filterHelpers(tree, regex) {
     var whitelist = this.whitelist;
     var blacklist = this.blacklist;
     var _this = this;
@@ -45,14 +45,14 @@ module.exports = {
     return new Funnel(tree, {
       exclude: [function(name) {
         return _this.exclusionFilter(name, regex, {
-          whitelist: whitelist,
-          blacklist: blacklist
+          whitelist,
+          blacklist
         });
       }]
     });
   },
 
-  exclusionFilter: function(name, regex, lists) {
+  exclusionFilter(name, regex, lists) {
     var whitelist = lists.whitelist || [];
     var blacklist = lists.blacklist || [];
     var isAddonHelper = regex.test(name);
@@ -88,7 +88,7 @@ module.exports = {
     return !isWhitelisted || isBlacklisted;
   },
 
-  generateWhitelist: function(addonConfig) {
+  generateWhitelist(addonConfig) {
     var only = addonConfig.only || [];
     var except = addonConfig.except || [];
 
@@ -99,7 +99,7 @@ module.exports = {
     return only;
   },
 
-  generateBlacklist: function(addonConfig) {
+  generateBlacklist(addonConfig) {
     var only = addonConfig.only || [];
     var except = addonConfig.except || [];
 
