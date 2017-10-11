@@ -21,12 +21,12 @@
   "repository": "https://github.com/shipshapecode/ember-math-helpers",
   "scripts": {
     "build": "ember build",
-    "start": "ember server",
+    "start": "ember serve",
     "test": "ember try:each"
   },
   "dependencies": {
     "broccoli-funnel": "^2.0.0",
-    "ember-cli-babel": "^6.8.1",
+    "ember-cli-babel": "^6.8.2",
     "ember-cli-htmlbars": "^2.0.3"
   },
   "devDependencies": {
@@ -36,16 +36,16 @@
     "@html-next/flexi-layouts": "^2.0.1",
     "broccoli-asset-rev": "^2.4.5",
     "codeclimate-test-reporter": "^0.5.0",
-    "ember-cli": "~2.16.0-beta.1",
+    "ember-cli": "~2.17.0-beta.1",
     "ember-cli-code-coverage": "0.4.1",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-deploy": "^1.0.0",
     "ember-cli-deploy-build": "^1.1.0",
     "ember-cli-deploy-ghpages": "^0.2.0",
-    "ember-cli-eslint": "^4.2.0",
+    "ember-cli-eslint": "^4.2.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.2",
     "ember-cli-inject-live-reload": "^1.4.1",
-    "ember-cli-qunit": "^4.0.0",
+    "ember-cli-qunit": "^4.1.0-beta.2",
     "ember-cli-sass": "^7.0.0",
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
@@ -55,7 +55,7 @@
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
-    "ember-source": "~2.16.0-beta.1",
+    "ember-source": "~2.17.0-beta.1",
     "eslint-plugin-ship-shape": "0.4.0",
     "flexi": "2.0.1",
     "loader.js": "^4.2.3"
