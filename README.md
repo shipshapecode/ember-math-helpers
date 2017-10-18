@@ -92,6 +92,20 @@ tan     | `Math.tan(a)`             | `{{tan a}}`
 tanh    | `Math.tanh(a)`            | `{{tanh a}}`
 trunc   | `Math.trunc(a)`           | `{{trunc a}}`
 
+### Special Cases
+
+Right now, there is one special case: the `round` helper will also take either
+a `decimals` property or an `exp` property. `decimals` will round to the
+specified number of decimals, while `exp` will round to the given power of ten.
+For example:
+
+```handlebars
+{{round 35.855 decimals=2}} {{!-- prints "35.86" --}}
+```
+
+```handlebars
+{{round 1234567 exp=3}} {{!-- prints "1235000" --}}
+```
 
 ### Random
 Helper                                       | JavaScript                                                                | HTMLBars
