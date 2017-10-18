@@ -16,4 +16,7 @@ test('it works', function(assert) {
 
   assert.equal(round([42]), 42, 'When given a whole number, the result stays the same');
 
+  assert.equal(round([35.855], { decimals: 2 }), 35.86, 'It rounds to a given number of decimal places');
+
+  assert.equal(round([123456], { exp: 3 }), 123000, 'It rounds to a given power of ten');
 });
