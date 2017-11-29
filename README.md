@@ -4,8 +4,6 @@
 
 **[ember-math-helpers is built and maintained by Ship Shape. Contact us for Ember.js consulting, development, and training for your project](https://shipshape.io/ember-consulting)**.
 
-[![Sponsor](https://app.codesponsor.io/embed/bnfiyuC9jfaRVvE6NRbanWqE/shipshapecode/ember-math-helpers.svg)](https://app.codesponsor.io/link/bnfiyuC9jfaRVvE6NRbanWqE/shipshapecode/ember-math-helpers)
-
 [![npm version](https://badge.fury.io/js/ember-math-helpers.svg)](http://badge.fury.io/js/ember-math-helpers)
 ![Download count all time](https://img.shields.io/npm/dt/ember-math-helpers.svg)
 [![npm](https://img.shields.io/npm/dm/ember-math-helpers.svg)]()
