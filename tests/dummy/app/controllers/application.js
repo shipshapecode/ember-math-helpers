@@ -1,4 +1,4 @@
-import Controller from 'ember-controller';
+import Controller from '@ember/controller';
 
 export default Controller.extend({
   addTemplate: '{{add 1 2}}',
