@@ -70,7 +70,7 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "https://ember-math-helpers.shipshape.io/"
+    "demoURL": "http://ember-math-helpers.shipshape.io/"
   },
   "greenkeeper": {
     "ignore": [
