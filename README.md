@@ -55,7 +55,7 @@ sub    | `a - b`    | `{{sub a b}}`
 
 #### Greatest Common Divisor
 
-The `gcd` helper uses [uses the Euclidean Algorithm](https://en.wikipedia.org/wiki/Greatest_common_divisor#Using_Euclid's_algorithm) to find the largest positive integer that divides two integers.
+The `gcd` helper uses [the Euclidean Algorithm](https://en.wikipedia.org/wiki/Greatest_common_divisor#Using_Euclid's_algorithm) to find the largest positive integer that divides two integers.
 
 ```hbs
 {{gcd 100 48}}
