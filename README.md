@@ -50,6 +50,24 @@ mod    | `a % b`    | `{{mod a b}}`
 mult   | `a * b`    | `{{mult a b}}`
 sub    | `a - b`    | `{{sub a b}}`
 
+
+### Advanced Arithmetic
+
+#### Greatest Common Divisor
+
+The `gcd` helper uses [the Euclidean Algorithm](https://en.wikipedia.org/wiki/Greatest_common_divisor#Using_Euclid's_algorithm) to find the largest positive integer that divides two integers.
+
+```hbs
+{{gcd 100 48}}
+<!-- Computes 4 -->
+
+{{gcd 6 -10}}
+<!-- Computes 2 -->
+```
+
+If no arguments are passed, the helper will return 0. If one argument is passed, the helper will simply reflect it back.
+
+
 ### Math
 
 We decided we should support the entirety of the JS `Math` methods, so this list will be quite long.
@@ -123,6 +141,7 @@ You can also use these helpers to do math inside other HTMLBars markup like so:
 ```hbs
 <span class="nav-marker color-{{if multiColor (add selectedIndex 1) 1}}"></span>
 ```
+
 
 ## Composable Helpers
 
