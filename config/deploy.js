@@ -5,8 +5,8 @@ module.exports = function(deployTarget) {
   let ENV = {
     build: {},
     // include other plugin configuration that applies to all deploy targets here
-    git: {
-      repo: 'https://github.com/shipshapecode/ember-math-helpers'
+    ghpages: {
+      gitRemoteUrl: 'https://github.com/shipshapecode/ember-math-helpers'
     }
   };
 
