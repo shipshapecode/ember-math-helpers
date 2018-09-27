@@ -3,10 +3,7 @@
 
 module.exports = function(deployTarget) {
   let ENV = {
-    build: {},
-    git: {
-      repo: 'git@github.com:shipshapecode/ember-math-helpers.git'
-    }
+    build: {}
   };
 
   if (deployTarget === 'development') {
