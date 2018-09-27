@@ -5,9 +5,9 @@ import { helper } from '@ember/component/helper';
 /**
  * Decimal adjustment of a number.
  *
- * @param {Number}  value The number.
- * @param {Integer} exp   The exponent (the 10 logarithm of the adjustment base).
- * @returns {Number} The adjusted value.
+ * @param {Number} value The number.
+ * @param {Integer} exp The exponent (the 10 logarithm of the adjustment base).
+ * @return {Number} The adjusted value.
  */
 function decimalAdjust(value, exp) {
   // If the exp is undefined or zero...

@@ -1,7 +1,17 @@
 import { helper } from '@ember/component/helper';
 
-export function tanh(params) {
-  return Math.tanh(params[0]);
+/**
+ * Executes `Math.tanh` on the number passed to the helper.
+ *
+ * ```hbs
+ * {{tanh a}}
+ * ```
+ *
+ * @param {number} number The number to pass to `Math.tanh`
+ * @return {number} The tanh of the passed number
+ */
+export function tanh([number]) {
+  return Math.tanh(number);
 }
 
 export default helper(tanh);

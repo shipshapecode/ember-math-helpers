@@ -28,3 +28,4 @@
 /package.json.ember-try
 
 .idea/
+/config/addon-docs.js

@@ -32,7 +32,7 @@ export function random(params, { decimals } = DEFAULT_OPTS) {
   if (params && params.length === 2) {
     let [lowerBound, upperBound] = params;
 
-    // for convinience, swap if a higher number is accidentally passed first
+    // for convenience, swap if a higher number is accidentally passed first
     if (upperBound < lowerBound) {
       [lowerBound, upperBound] = [upperBound, lowerBound];
     }

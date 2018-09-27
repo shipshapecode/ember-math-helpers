@@ -1,7 +1,17 @@
 import { helper } from '@ember/component/helper';
 
-export function log10(params) {
-  return Math.log10(params[0]);
+/**
+ * Executes `Math.log10` on the number passed to the helper.
+ *
+ * ```hbs
+ * {{log10 a}}
+ * ```
+ *
+ * @param {number} number The number to pass to `Math.log10`
+ * @return {number} The log10 of the passed number
+ */
+export function log10([number]) {
+  return Math.log10(number);
 }
 
 export default helper(log10);

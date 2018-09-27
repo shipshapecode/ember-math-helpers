@@ -1,7 +1,17 @@
 import { helper } from '@ember/component/helper';
 
-export function atan(params) {
-  return Math.atan(params[0]);
+/**
+ * Executes `Math.atan` on the number passed to the helper.
+ *
+ * ```hbs
+ * {{atan a}}
+ * ```
+ *
+ * @param {number} number The number to pass to `Math.atan`
+ * @return {number} The atan of the passed number
+ */
+export function atan([number]) {
+  return Math.atan(number);
 }
 
 export default helper(atan);

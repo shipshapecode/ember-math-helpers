@@ -1,7 +1,17 @@
 import { helper } from '@ember/component/helper';
 
-export function tan(params) {
-  return Math.tan(params[0]);
+/**
+ * Executes `Math.tan` on the number passed to the helper.
+ *
+ * ```hbs
+ * {{tan a}}
+ * ```
+ *
+ * @param {number} number The number to pass to `Math.tan`
+ * @return {number} The tan of the passed number
+ */
+export function tan([number]) {
+  return Math.tan(number);
 }
 
 export default helper(tan);

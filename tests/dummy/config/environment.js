@@ -20,6 +20,9 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    'ember-cli-addon-docs': {
+      disableGeneratedDocs: false
     }
   };
 
@@ -44,6 +47,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    // Allow ember-cli-addon-docs to update the rootURL in compiled assets
+    ENV.rootURL = 'ADDON_DOCS_ROOT_URL';
     ENV.locationType = 'hash';
   }
 
