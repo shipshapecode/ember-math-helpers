@@ -21,6 +21,7 @@ export default Component.extend({
   randomFloatTwoDecimals: '{{random decimals=2}}',
   randomFloatFourDecimals: '{{random decimals=4}}',
   randomBoundedAndDecimal: '{{random 93 20 decimals=1}}',
+  roundTemplate: '{{round 21.23}}',
 
   classString: `docs-transition
     focus:docs-outline-0
