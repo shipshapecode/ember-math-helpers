@@ -1,1 +1,125 @@
-{{input type="text" value=addTemplate}} = <span class="result">{{render-template templateString=addTemplate}}</span>
+<h2>Basic Arithmetic</h2>
+
+<h3>Addition</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=addTemplate}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=addTemplate}}</span>
+</div>
+
+<h3>Division</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=divTemplate}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=divTemplate}}</span>
+</div>
+
+<h3>Modulus</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=modTemplate}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=modTemplate}}</span>
+</div>
+
+<h3>Multiplication</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=multTemplate}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=multTemplate}}</span>
+</div>
+
+<h3>Subtraction</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=subTemplate}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=subTemplate}}</span>
+</div>
+
+<h2>Advanced Arithmetic</h2>
+
+<h3>GCD</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=gcdTemplate}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=gcdTemplate}}</span>
+</div>
+
+<h2>Composable Examples</h2>
+
+<h3>Composable Subtraction</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=composableSub}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=composableSub}}</span>
+</div>
+
+<h3>Composable Multiple Operations</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=composableComplex}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=composableComplex}}</span>
+</div>
+
+<h2>Min, Max, Round</h2>
+
+<h3>Min</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=minTemplate}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=minTemplate}}</span>
+</div>
+
+<h3>Max</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=maxTemplate}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=maxTemplate}}</span>
+</div>
+
+<centered>
+  21.23 rounded to the nearest whole number = <span class="result">{{round 21.23}}</span>
+</centered>
+
+<h2>Random Numbers</h2>
+
+<h3>Integer (0 - 1)</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=randomTemplate}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=randomTemplate}}</span>
+</div>
+
+<h3>Bounded Int (0 - 42)</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=randomSingleBound}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=randomSingleBound}}</span>
+</div>
+
+<h3>Bounded Int (21 - 1797)</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=randomTwoBounds}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=randomTwoBounds}}</span>
+</div>
+
+<h3>Float, 2 decimals (0 - 1)</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=randomFloatTwoDecimals}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=randomFloatTwoDecimals}}</span>
+</div>
+
+<h3>Float, 4 decimals (0 - 1)</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=randomFloatFourDecimals}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=randomFloatFourDecimals}}</span>
+</div>
+
+<h3>Bounded Float, 1 decimal (20 - 93)</h3>
+
+<div class="docs-flex docs-mb-4">
+  {{input class=classString type="text" value=randomBoundedAndDecimal}} <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template
+  templateString=randomBoundedAndDecimal}}</span>
+</div>

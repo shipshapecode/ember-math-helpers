@@ -1,4 +1,4 @@
-# Ember-math-helpers
+# ember-math-helpers
 
 <a href="https://shipshape.io/"><img src="http://i.imgur.com/KVqNjgO.png" alt="Ship Shape" width="100" height="100"/></a>
 
