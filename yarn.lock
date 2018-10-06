@@ -4341,14 +4341,16 @@ ember-disable-prototype-extensions@^1.1.3:
   resolved "https://registry.yarnpkg.com/ember-disable-prototype-extensions/-/ember-disable-prototype-extensions-1.1.3.tgz#1969135217654b5e278f9fe2d9d4e49b5720329e"
   integrity sha1-GWkTUhdlS14nj5/i2dTkm1cgMp4=
 
-ember-dynamic-render-template@rwwagner90/ember-dynamic-render-template:
-  version "0.0.4"
-  resolved "https://codeload.github.com/rwwagner90/ember-dynamic-render-template/tar.gz/bd5cf03678ecee4880fd52acbbbf5a7770e73f06"
+ember-dynamic-render-template@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/ember-dynamic-render-template/-/ember-dynamic-render-template-0.0.5.tgz#52d4774264c76900a63f39ed0e6c3c1670e5dca4"
+  integrity sha512-+2+wdArW5kljLbrPSH9RYrkwVAj+NsGg0m2ZA6O+AN0N/nA1cusZHlSejRsb1PAYJu9olXFoeqCOHH0YXlW9Aw==
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^3.0.1"
     ember-cli-babel "^6.6.0"
     ember-cli-htmlbars "^2.0.1"
+    resolve "^1.8.1"
 
 ember-export-application-global@^2.0.0:
   version "2.0.0"
