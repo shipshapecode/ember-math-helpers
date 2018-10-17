@@ -2,7 +2,7 @@ import { helper } from '@ember/component/helper';
 import { gcd } from './gcd';
 
 /**
- * Returns the smallest positive integer that is divisible by both a and b
+ * Returns the smallest positive integer that is divisible by both number1 and number2
  *
  * ```hbs
  * {{lcm a b}}
