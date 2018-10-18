@@ -16,6 +16,15 @@ The `gcd` helper uses [the Euclidean Algorithm](https://en.wikipedia.org/wiki/Gr
 
 If no arguments are passed, the helper will return 0. If one argument is passed, the helper will simply reflect it back.
 
+#### Least common multiple
+
+The `lcm` helper calculates the smallest positive integer that is divisible by both a and b.
+
+```hbs
+{{lcm 15 12}}
+<!-- Computes 60 -->
+```
+
 ### Special Cases
 
 Right now, there is one special case: the `round` helper will also take either
