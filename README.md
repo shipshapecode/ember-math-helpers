@@ -14,9 +14,16 @@
 
 HTMLBars template helpers for doing basic arithmetic operations
 
-## Installation
+Installation
+------------------------------------------------------------------------------
 
 `ember install ember-math-helpers`
 
-## Documentation
+Documentation
+------------------------------------------------------------------------------
 [View Docs](https://shipshapecode.github.io/ember-math-helpers/)
+
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
