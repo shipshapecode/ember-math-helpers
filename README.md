@@ -29,6 +29,12 @@ Documentation
 ------------------------------------------------------------------------------
 [View Docs](https://shipshapecode.github.io/ember-math-helpers/)
 
+Contributing
+------------------------------------------------------------------------------
+
+See the [Contributing](CONTRIBUTING.md) guide for details.
+
+
 License
 ------------------------------------------------------------------------------
 
