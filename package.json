@@ -1,6 +1,6 @@
 {
   "name": "ember-math-helpers",
-  "version": "2.10.0",
+  "version": "2.11.0",
   "description": "HTMLBars helpers for basic arithmetic",
   "keywords": [
     "ember-addon",
