@@ -8,7 +8,7 @@
 ![Download count all time](https://img.shields.io/npm/dt/ember-math-helpers.svg)
 [![npm](https://img.shields.io/npm/dm/ember-math-helpers.svg)]()
 [![Ember Observer Score](http://emberobserver.com/badges/ember-math-helpers.svg)](http://emberobserver.com/addons/ember-math-helpers)
-[![Build Status](https://travis-ci.org/shipshapecode/ember-math-helpers.svg?branch=master)](https://travis-ci.org/shipshapecode/ember-math-helpers)
+![CI Build](https://github.com/shipshapecode/ember-math-helpers/workflows/CI%20Build/badge.svg)
 [![Code Climate](https://codeclimate.com/github/shipshapecode/ember-math-helpers/badges/gpa.svg)](https://codeclimate.com/github/shipshapecode/ember-math-helpers)
 [![Test Coverage](https://codeclimate.com/github/shipshapecode/ember-math-helpers/badges/coverage.svg)](https://codeclimate.com/github/shipshapecode/ember-math-helpers/coverage)
 
