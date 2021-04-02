@@ -1233,6 +1233,16 @@
   dependencies:
     ember-cli-babel "^7.1.3"
 
+"@ember-template-lint/todo-utils@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@ember-template-lint/todo-utils/-/todo-utils-8.0.0.tgz#db18b2bbc26fb372062d827138b7e1bb659a30ae"
+  integrity sha512-bqULTNLWr93SRfM+MkPFN4qdYvdzmvwiPBaHpxQM67qnZ1BCs4Mr7zV8GF8OSmSKbyPNMAN2ZyxsPbNRbN6o3g==
+  dependencies:
+    "@types/eslint" "^7.2.7"
+    fs-extra "^9.1.0"
+    slash "^3.0.0"
+    tslib "^2.1.0"
+
 "@ember/edition-utils@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@ember/edition-utils/-/edition-utils-1.2.0.tgz#a039f542dc14c8e8299c81cd5abba95e2459cfa6"
@@ -2032,6 +2042,14 @@
   resolved "https://registry.yarnpkg.com/@types/ember__utils/-/ember__utils-3.16.2.tgz#3fa9a0666a3e8204262e2a2960289aaf01f29467"
   integrity sha512-tBbqewgegiKSpGZvGh3pbcoXwLCMvKVdLRE97vys75nAEz/vBzkGJm+PDz1HVaTkRukWbRhlDiTm2qFH8qRnSw==
 
+"@types/eslint@^7.2.7":
+  version "7.2.8"
+  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.2.8.tgz#45cd802380fcc352e5680e1781d43c50916f12ee"
+  integrity sha512-RTKvBsfz0T8CKOGZMfuluDNyMFHnu5lvNr4hWEsQeHXH6FcmIDIozOyWMh36nLGMwVd5UFNXC2xztA8lln22MQ==
+  dependencies:
+    "@types/estree" "*"
+    "@types/json-schema" "*"
+
 "@types/estree@*":
   version "0.0.45"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.45.tgz#e9387572998e5ecdac221950dab3e8c3b16af884"
@@ -2094,6 +2112,11 @@
   integrity sha512-6RXU9Xzpc6vxNrS6FPPapN1SxSHgQ336WC6Jj/N8q30OiaBZ00l1GBgeP7usjVZPivSkGUfL1z/WW6TX989M+w==
   dependencies:
     "@types/sizzle" "*"
+
+"@types/json-schema@*":
+  version "7.0.7"
+  resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
+  integrity sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA==
 
 "@types/json-schema@^7.0.5":
   version "7.0.6"
@@ -5813,6 +5836,11 @@ data-urls@^2.0.0:
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
 
+date-fns@^2.19.0:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.19.0.tgz#65193348635a28d5d916c43ec7ce6fbd145059e1"
+  integrity sha512-X3bf2iTPgCAQp9wvjOQytnf5vO5rESYRXlPIVcgSbtT5OTScPcsf9eZU+B/YIkKAtYr5WeCii58BgATrNitlWg==
+
 date-time@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/date-time/-/date-time-2.1.0.tgz#0286d1b4c769633b3ca13e1e62558d2dbdc2eba2"
@@ -7277,21 +7305,23 @@ ember-svg-jar@^2.1.0, ember-svg-jar@^2.2.3:
     mkdirp "^0.5.1"
     path-posix "^1.0.0"
 
-ember-template-lint@^2.14.0:
-  version "2.21.0"
-  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-2.21.0.tgz#7e120abf309a8810eeed26c52377943faf15a95b"
-  integrity sha512-19QbEqJQdMfcRS7PsQsubflRowEtnkbD0tpYR4q/xq4lodmhU7hhOFvlTQgbxD/jwW5Ur+tkOwH4KFy9JwOyXA==
+ember-template-lint@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-3.2.0.tgz#d9fefc4f572079db2807c068f652a9d3cdc84c7c"
+  integrity sha512-X37VYwhi2JdVU7+CQDtLCCSHzK2+CeQ64/WQ4hKt9bx1ZtvxWXDMd2BNeDBckY/YvdviG0Yq2VARCzHpkiElwQ==
   dependencies:
+    "@ember-template-lint/todo-utils" "^8.0.0"
     chalk "^4.0.0"
+    date-fns "^2.19.0"
     ember-template-recast "^5.0.1"
     find-up "^5.0.0"
     fuse.js "^6.4.6"
     get-stdin "^8.0.0"
-    globby "^11.0.2"
+    globby "^11.0.3"
     is-glob "^4.0.1"
     micromatch "^4.0.2"
     resolve "^1.20.0"
-    v8-compile-cache "^2.2.0"
+    v8-compile-cache "^2.3.0"
     yargs "^16.2.0"
 
 ember-template-recast@^5.0.1:
@@ -8522,6 +8552,16 @@ fs-extra@^9.0.0, fs-extra@^9.0.1:
     jsonfile "^6.0.1"
     universalify "^1.0.0"
 
+fs-extra@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
+  integrity sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
+  dependencies:
+    at-least-node "^1.0.0"
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
 fs-merger@^3.0.1, fs-merger@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/fs-merger/-/fs-merger-3.1.0.tgz#f30f74f6c70b2ff7333ec074f3d2f22298152f3b"
@@ -8883,7 +8923,7 @@ globby@10.0.0:
     merge2 "^1.2.3"
     slash "^3.0.0"
 
-globby@11.0.3, globby@^11.0.1, globby@^11.0.2:
+globby@11.0.3, globby@^11.0.1, globby@^11.0.3:
   version "11.0.3"
   resolved "https://registry.yarnpkg.com/globby/-/globby-11.0.3.tgz#9b1f0cb523e171dd1ad8c7b2a9fb4b644b9593cb"
   integrity sha512-ffdmosjA807y7+lA1NM0jELARVmYul/715xiILEjo3hBLPTcirgQNnXECn5g3mtR8TOLCVbkfua1Hpen25/Xcg==
@@ -14816,6 +14856,11 @@ tslib@^2.0.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
   integrity sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==
 
+tslib@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
+
 tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
@@ -15162,10 +15207,10 @@ uuid@^3.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
-v8-compile-cache@^2.0.3, v8-compile-cache@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.2.0.tgz#9471efa3ef9128d2f7c6a7ca39c4dd6b5055b132"
-  integrity sha512-gTpR5XQNKFwOd4clxfnhaqvfqMpqEwr4tOtCyz4MtYZX2JYhfr1JvBFKdS+7K/9rfpZR3VLX+YWBbKoxCgS43Q==
+v8-compile-cache@^2.0.3, v8-compile-cache@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
+  integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
