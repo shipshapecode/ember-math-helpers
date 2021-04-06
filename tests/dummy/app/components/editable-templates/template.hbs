@@ -1,212 +1,324 @@
-<h2>Basic Arithmetic</h2>
+<h2>
+  Basic Arithmetic
+</h2>
 
-<h3>Addition</h3>
+<label>
+  <h3>
+    Addition
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.addTemplate
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.addTemplate}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.addTemplate}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.addTemplate}}
+    </span>
+  </div>
+</label>
 
-<h3>Division</h3>
+<label>
+  <h3>
+    Division
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.divTemplate
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.divTemplate}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.divTemplate}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.divTemplate}}
+    </span>
+  </div>
+</label>
 
-<h3>Modulus</h3>
+<label>
+  <h3>
+    Modulus
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.modTemplate
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.modTemplate}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.modTemplate}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.modTemplate}}
+    </span>
+  </div>
+</label>
 
-<h3>Multiplication</h3>
+<label>
+  <h3>
+    Multiplication
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.multTemplate
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.multTemplate}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.multTemplate}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.multTemplate}}
+    </span>
+  </div>
+</label>
 
-<h3>Subtraction</h3>
+<label>
+  <h3>
+    Subtraction
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.subTemplate
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.subTemplate}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.subTemplate}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.subTemplate}}
+    </span>
+  </div>
+</label>
 
-<h2>Advanced Arithmetic</h2>
+<h2>
+  Advanced Arithmetic
+</h2>
 
-<h3>GCD</h3>
+<label>
+  <h3>
+    GCD
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.gcdTemplate
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.gcdTemplate}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.gcdTemplate}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.gcdTemplate}}
+    </span>
+  </div>
+</label>
 
-<h2>Composable Examples</h2>
+<h2>
+  Composable Examples
+</h2>
 
-<h3>Composable Subtraction</h3>
+<label>
+  <h3>
+    Composable Subtraction
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.composableSub
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.composableSub}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.composableSub}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.composableSub}}
+    </span>
+  </div>
+</label>
 
-<h3>Composable Multiple Operations</h3>
+<label>
+  <h3>
+    Composable Multiple Operations
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.composableComplex
-  }}
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.composableComplex}}</span>
-</div>
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.composableComplex}}
+    />
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.composableComplex}}
+    </span>
+  </div>
+</label>
 
-<h2>Min, Max, Round</h2>
+<h2>
+  Min, Max, Round
+</h2>
 
-<h3>Min</h3>
+<label>
+  <h3>
+    Min
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.minTemplate
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.minTemplate}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.minTemplate}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.minTemplate}}
+    </span>
+  </div>
+</label>
 
-<h3>Max</h3>
+<label>
+  <h3>
+    Max
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.maxTemplate
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.maxTemplate}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.maxTemplate}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.maxTemplate}}
+    </span>
+  </div>
+</label>
 
-<h3>Round</h3>
+<label>
+  <h3>
+    Round
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.roundTemplate
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.roundTemplate}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.roundTemplate}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.roundTemplate}}
+    </span>
+  </div>
+</label>
 
-<h2>Random Numbers</h2>
+<h2>
+  Random Numbers
+</h2>
 
-<h3>Integer (0 - 1)</h3>
+<label>
+  <h3>
+    Integer (0 - 1)
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.randomTemplate
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.randomTemplate}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.randomTemplate}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.randomTemplate}}
+    </span>
+  </div>
+</label>
 
-<h3>Bounded Int (0 - 42)</h3>
+<label>
+  <h3>
+    Bounded Int (0 - 42)
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.randomSingleBound
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.randomSingleBound}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.randomSingleBound}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.randomSingleBound}}
+    </span>
+  </div>
+</label>
 
-<h3>Bounded Int (21 - 1797)</h3>
+<label>
+  <h3>
+    Bounded Int (21 - 1797)
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.randomTwoBounds
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.randomTwoBounds}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.randomTwoBounds}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.randomTwoBounds}}
+    </span>
+  </div>
+</label>
 
-<h3>Float, 2 decimals (0 - 1)</h3>
+<label>
+  <h3>
+    Float, 2 decimals (0 - 1)
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.randomFloatTwoDecimals
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.randomFloatTwoDecimals}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.randomFloatTwoDecimals}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.randomFloatTwoDecimals}}
+    </span>
+  </div>
+</label>
 
-<h3>Float, 4 decimals (0 - 1)</h3>
+<label>
+  <h3>
+    Float, 4 decimals (0 - 1)
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.randomFloatFourDecimals
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.randomFloatFourDecimals}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.randomFloatFourDecimals}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.randomFloatFourDecimals}}
+    </span>
+  </div>
+</label>
 
-<h3>Bounded Float, 1 decimal (20 - 93)</h3>
+<label>
+  <h3>
+    Bounded Float, 1 decimal (20 - 93)
+  </h3>
 
-<div class="docs-flex docs-mb-4">
-  {{input
-    class=this.classString
-    type="text"
-    value=this.randomBoundedAndDecimal
-  }}
+  <div class="docs-flex docs-mb-4">
+    <Input
+      class={{this.classString}}
+      @type="text"
+      @value={{this.randomBoundedAndDecimal}}
+    />
 
-  <span class="docs-flex docs-items-center docs-text-xl"> = {{render-template templateString=this.randomBoundedAndDecimal}}</span>
-</div>
+    <span class="docs-flex docs-items-center docs-text-xl">
+      = {{render-template templateString=this.randomBoundedAndDecimal}}
+    </span>
+  </div>
+</label>
