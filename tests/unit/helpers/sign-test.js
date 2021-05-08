@@ -1,9 +1,8 @@
 import { sign } from 'dummy/helpers/sign';
 import { module, test } from 'qunit';
 
-module('Unit | Helper | sign', function() {
-  test('it works', function(assert) {
-
+module('Unit | Helper | sign', function () {
+  test('it works', function (assert) {
     assert.equal(sign([-5]), -1, 'Negative returns -1');
 
     assert.equal(sign([5]), 1, 'Positive returns 1');

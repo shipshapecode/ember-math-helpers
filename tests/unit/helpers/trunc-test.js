@@ -1,8 +1,8 @@
 import { trunc } from 'dummy/helpers/trunc';
 import { module, test } from 'qunit';
 
-module('Unit | Helper | trunc', function() {
-  test('trunc works', function(assert) {
+module('Unit | Helper | trunc', function () {
+  test('trunc works', function (assert) {
     let result;
     result = trunc([13.37]);
     assert.equal(result, 13);

@@ -10,11 +10,11 @@ const MAX_DECIMALS = 20;
 // decimal precision. We'll default to whole-number rounding simply
 // by defaulting `decimals` to 0
 const DEFAULT_OPTS = {
-  decimals: 0
+  decimals: 0,
 };
 
 /**
- * Executes `Math.random` with the provided upper-bounded randoms, lower- and upper-bounded randoms, 
+ * Executes `Math.random` with the provided upper-bounded randoms, lower- and upper-bounded randoms,
  * and the option to configure decimal precision.
  *
  * ```hbs
@@ -27,7 +27,7 @@ const DEFAULT_OPTS = {
  *
  * ```hbs
  * {{random 21 1797}} or {{random 21 1797 decimals=4}}
- * ``` 
+ * ```
  *
  * @param {number} upperBound
  * @param {number} lowerBound
@@ -37,16 +37,21 @@ const DEFAULT_OPTS = {
 export function random(params, { decimals } = DEFAULT_OPTS) {
   // no positional args, but only an options hash from named args
   if (typeof params === 'object' && !isArray(params)) {
-    decimals = typeof params.decimals !== 'undefined' ? params.decimals : DEFAULT_OPTS.decimals;
+    decimals =
+      typeof params.decimals !== 'undefined'
+        ? params.decimals
+        : DEFAULT_OPTS.decimals;
 
-    return +(Math.random().toFixed(max(0, min(MAX_DECIMALS, decimals))));
+    return +Math.random().toFixed(max(0, min(MAX_DECIMALS, decimals)));
   }
 
   // one positional arg: treat it as an upper bound
   if (params && params.length === 1) {
     const [upperBound] = params;
 
-    return +((Math.random() * upperBound).toFixed(max(0, min(MAX_DECIMALS, decimals))));
+    return +(Math.random() * upperBound).toFixed(
+      max(0, min(MAX_DECIMALS, decimals))
+    );
   }
 
   // two positional args: use them to derive upper and lower bounds
@@ -57,11 +62,13 @@ export function random(params, { decimals } = DEFAULT_OPTS) {
     if (upperBound < lowerBound) {
       [lowerBound, upperBound] = [upperBound, lowerBound];
     }
-    return +((lowerBound + (Math.random() * (upperBound - lowerBound))).toFixed(max(0, min(MAX_DECIMALS, decimals))));
+    return +(lowerBound + Math.random() * (upperBound - lowerBound)).toFixed(
+      max(0, min(MAX_DECIMALS, decimals))
+    );
   }
 
   // no positional or named args: just return Math.random() w/ default decimal precision
-  return +(Math.random().toFixed(max(0, min(MAX_DECIMALS, decimals))));
+  return +Math.random().toFixed(max(0, min(MAX_DECIMALS, decimals)));
 }
 
 export default helper(random);

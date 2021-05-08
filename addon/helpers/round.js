@@ -17,7 +17,11 @@ function decimalAdjust(value, exp) {
   value = +value;
   exp = +exp;
   // If the value is not a number or the exp is not an integer...
-  if (value === null || isNaN(value) || !(typeof exp === 'number' && exp % 1 === 0)) {
+  if (
+    value === null ||
+    isNaN(value) ||
+    !(typeof exp === 'number' && exp % 1 === 0)
+  ) {
     return NaN;
   }
   // If the value is negative...
@@ -26,10 +30,10 @@ function decimalAdjust(value, exp) {
   }
   // Shift
   value = value.toString().split('e');
-  value = Math.round(+(`${value[0]}e${value[1] ? (+value[1] - exp) : -exp}`));
+  value = Math.round(+`${value[0]}e${value[1] ? +value[1] - exp : -exp}`);
   // Shift back
   value = value.toString().split('e');
-  return +(`${value[0]}e${value[1] ? (+value[1] + exp) : exp}`);
+  return +`${value[0]}e${value[1] ? +value[1] + exp : exp}`;
 }
 
 export function round(number, namedArgs) {

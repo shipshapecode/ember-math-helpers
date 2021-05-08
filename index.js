@@ -18,7 +18,10 @@ module.exports = {
 
     this.app = app;
 
-    var addonOptions = (this.parent && this.parent.options) || (this.app && this.app.options) || {};
+    var addonOptions =
+      (this.parent && this.parent.options) ||
+      (this.app && this.app.options) ||
+      {};
     var config = addonOptions[this.name] || {};
     this.whitelist = this.generateWhitelist(config);
     this.blacklist = this.generateBlacklist(config);
@@ -27,14 +30,14 @@ module.exports = {
   treeForAddon() {
     // see: https://github.com/ember-cli/ember-cli/issues/4463
     var tree = this._super.treeForAddon.apply(this, arguments);
-    var moduleRegexp = '(^modules\/)?' + this.name + '\/helpers\/';
+    var moduleRegexp = '(^modules/)?' + this.name + '/helpers/';
     return this.filterHelpers(tree, new RegExp(moduleRegexp, 'i'));
   },
 
   treeForApp() {
     // see: https://github.com/ember-cli/ember-cli/issues/4463
     var tree = this._super.treeForApp.apply(this, arguments);
-    var moduleRegexp = '^helpers\/';
+    var moduleRegexp = '^helpers/';
     return this.filterHelpers(tree, new RegExp(moduleRegexp, 'i'));
   },
 
@@ -44,17 +47,22 @@ module.exports = {
     var _this = this;
 
     // exit early if no opts defined
-    if ((!whitelist || whitelist.length === 0) && (!blacklist || blacklist.length === 0)) {
+    if (
+      (!whitelist || whitelist.length === 0) &&
+      (!blacklist || blacklist.length === 0)
+    ) {
       return new Funnel(tree);
     }
 
     return new Funnel(tree, {
-      exclude: [function(name) {
-        return _this.exclusionFilter(name, regex, {
-          whitelist,
-          blacklist
-        });
-      }]
+      exclude: [
+        function (name) {
+          return _this.exclusionFilter(name, regex, {
+            whitelist,
+            blacklist,
+          });
+        },
+      ],
     });
   },
 
@@ -114,5 +122,5 @@ module.exports = {
     }
 
     return except;
-  }
+  },
 };
