@@ -1,10 +1,9 @@
 import { expm1 } from 'dummy/helpers/expm1';
 import { module, test } from 'qunit';
 
-module('Unit | Helper | expm1', function() {
-  test('expm1 works', function(assert) {
+module('Unit | Helper | expm1', function () {
+  test('expm1 works', function (assert) {
     const result = expm1([1]);
     assert.equal(result.toFixed(3), 1.718);
   });
 });
-

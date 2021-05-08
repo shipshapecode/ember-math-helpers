@@ -3,11 +3,11 @@ import config from 'dummy/config/environment';
 
 const Router = AddonDocsRouter.extend({
   location: config.locationType,
-  rootURL: config.rootURL
+  rootURL: config.rootURL,
 });
 
-Router.map(function() {
-  docsRoute(this, function() {
+Router.map(function () {
+  docsRoute(this, function () {
     this.route('configuration');
     this.route('playground');
     this.route('usage');

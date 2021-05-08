@@ -1,8 +1,8 @@
 import { ceil } from 'dummy/helpers/ceil';
 import { module, test } from 'qunit';
 
-module('Unit | Helper | ceil', function() {
-  test('it works', function(assert) {
+module('Unit | Helper | ceil', function () {
+  test('it works', function (assert) {
     let result = ceil([1]);
     assert.equal(result, 1);
 

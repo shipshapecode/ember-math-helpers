@@ -13,6 +13,8 @@ import { gcd } from './gcd';
  * @return {number} The LCM of the two numbers passed
  */
 export function lcm([number1 = 0, number2 = 0]) {
-  return ((number1 === 0) || (number2 === 0)) ? 0 : Math.abs(number1 * number2) / gcd([number1, number2]);
+  return number1 === 0 || number2 === 0
+    ? 0
+    : Math.abs(number1 * number2) / gcd([number1, number2]);
 }
 export default helper(lcm);

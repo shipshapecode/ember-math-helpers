@@ -1,3 +1,3 @@
 module.exports = {
-  excludes: ['*/app/**/*', '*/tests/**/*',]
+  excludes: ['*/app/**/*', '*/tests/**/*'],
 };
