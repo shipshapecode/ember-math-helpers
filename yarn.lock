@@ -6432,7 +6432,7 @@ ember-cli-addon-docs-esdoc@^0.4.0:
     broccoli-caching-writer "^3.0.3"
     ember-cli-babel "^7.26.3"
     ember-cli-htmlbars "^5.7.1"
-    esdoc "github:pzuraq/esdoc#015a342"
+    esdoc pzuraq/esdoc#015a342
     esdoc-accessor-plugin "^1.0.0"
     esdoc-ecmascript-proposal-plugin "^1.0.0"
     esdoc-typescript-plugin "^1.0.1"
@@ -7339,7 +7339,7 @@ ember-source-channel-url@^3.0.0:
   dependencies:
     node-fetch "^2.6.0"
 
-ember-source@~3.27.0:
+ember-source@~3.27.5:
   version "3.27.5"
   resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.27.5.tgz#8e9ce24c17e7a16dc3c2b128d3d3e24ea79e6726"
   integrity sha512-oSGM9mD6BuOcGilYqU+F2MtCferQhKWO3REX1P9qgN1Wzfa5kXjbjBBdPNWfBtg7bZLGM27H8JgiV6+t3uGegA==
@@ -7763,7 +7763,6 @@ esdoc-typescript-plugin@^1.0.1:
 
 "esdoc@github:pzuraq/esdoc#015a342":
   version "1.0.4"
-  uid "015a3426b2e53b2b0270a9c00133780db3f1d144"
   resolved "https://codeload.github.com/pzuraq/esdoc/tar.gz/015a3426b2e53b2b0270a9c00133780db3f1d144"
   dependencies:
     babel-generator "6.26.0"
